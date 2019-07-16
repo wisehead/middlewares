@@ -1,0 +1,4 @@
+#include "build_version.h"
+const char* rocksutil_build_git_sha = "rocksutil_build_git_sha:@@GIT_SHA@@";
+const char* rocksutil_build_git_date = "rocksutil_build_git_date:@@GIT_DATE_TIME@@";
+const char* rocksutil_build_compile_date = __DATE__;
