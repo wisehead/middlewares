@@ -1,0 +1,1283 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALIGN	rutil/crc32c.cc	/^#define ALIGN(/;"	d	file:
+ALIGN	rutil/crc32c.cc	/^#undef ALIGN$/;"	d	file:
+AM_DEFAULT_VERBOSITY	Makefile	/^AM_DEFAULT_VERBOSITY = 0$/;"	m
+AM_LINK	Makefile	/^AM_LINK = $(AM_V_CCLD)$(CXX) $^ $(EXEC_LDFLAGS) -o $@ $(LDFLAGS) $(COVERAGEFLAGS)$/;"	m
+AM_V_AR	Makefile	/^AM_V_AR = $(am__v_AR_$(V))$/;"	m
+AM_V_CC	Makefile	/^AM_V_CC = $(am__v_CC_$(V))$/;"	m
+AM_V_CCLD	Makefile	/^AM_V_CCLD = $(am__v_CCLD_$(V))$/;"	m
+AM_V_GEN	Makefile	/^AM_V_GEN = $(am__v_GEN_$(V))$/;"	m
+AM_V_at	Makefile	/^AM_V_at = $(am__v_at_$(V))$/;"	m
+ARFLAGS	Makefile	/^ARFLAGS = rs$/;"	m
+Aborted	include/rocksutil/status.h	/^  static Status Aborted(SubCode msg = kNone) { return Status(kAborted, msg); }$/;"	f	class:rocksutil::Status
+Aborted	include/rocksutil/status.h	/^  static Status Aborted(const Slice& msg, const Slice& msg2 = Slice()) {$/;"	f	class:rocksutil::Status
+AccessPattern	include/rocksutil/env.h	/^  enum AccessPattern { NORMAL, RANDOM, SEQUENTIAL, WILLNEED, DONTNEED };$/;"	g	class:rocksutil::RandomAccessFile
+AddRecord	rutil/log_writer.cc	/^Status Writer::AddRecord(const Slice& slice) {$/;"	f	class:rocksutil::log::Writer
+AddThreadData	rutil/thread_local.cc	/^void ThreadLocalPtr::StaticMeta::AddThreadData(ThreadLocalPtr::ThreadData* d) {$/;"	f	class:rocksutil::ThreadLocalPtr::StaticMeta
+AlignedBuffer	rutil/aligned_buffer.h	/^  AlignedBuffer()$/;"	f	class:rocksutil::AlignedBuffer
+AlignedBuffer	rutil/aligned_buffer.h	/^class AlignedBuffer {$/;"	c	namespace:rocksutil
+Alignment	rutil/aligned_buffer.h	/^  size_t Alignment() const {$/;"	f	class:rocksutil::AlignedBuffer
+Alignment	rutil/aligned_buffer.h	/^  void Alignment(size_t alignment) {$/;"	f	class:rocksutil::AlignedBuffer
+Allocate	include/rocksutil/env.h	/^  virtual Status Allocate(uint64_t offset, uint64_t len) {$/;"	f	class:rocksutil::WritableFile
+Allocate	rutil/io_posix.cc	/^Status PosixMmapFile::Allocate(uint64_t offset, uint64_t len) {$/;"	f	class:rocksutil::PosixMmapFile
+Allocate	rutil/io_posix.cc	/^Status PosixWritableFile::Allocate(uint64_t offset, uint64_t len) {$/;"	f	class:rocksutil::PosixWritableFile
+AllocateNewBuffer	rutil/aligned_buffer.h	/^  void AllocateNewBuffer(size_t requestedCapacity) {$/;"	f	class:rocksutil::AlignedBuffer
+Append	rutil/aligned_buffer.h	/^  size_t Append(const char* src, size_t append_size) {$/;"	f	class:rocksutil::AlignedBuffer
+Append	rutil/file_reader_writer.cc	/^Status WritableFileWriter::Append(const Slice& data) {$/;"	f	class:rocksutil::WritableFileWriter
+Append	rutil/io_posix.cc	/^Status PosixDirectIOWritableFile::Append(const Slice& data) {$/;"	f	class:rocksutil::PosixDirectIOWritableFile
+Append	rutil/io_posix.cc	/^Status PosixMmapFile::Append(const Slice& data) {$/;"	f	class:rocksutil::PosixMmapFile
+Append	rutil/io_posix.cc	/^Status PosixWritableFile::Append(const Slice& data) {$/;"	f	class:rocksutil::PosixWritableFile
+ApplyToAllCacheEntries	rutil/lru_cache.cc	/^void LRUCacheShard::ApplyToAllCacheEntries(void (*callback)(void*, size_t),$/;"	f	class:rocksutil::LRUCacheShard
+ApplyToAllCacheEntries	rutil/lru_cache.h	/^  void ApplyToAllCacheEntries(T func) {$/;"	f	class:rocksutil::LRUHandleTable
+ApplyToAllCacheEntries	rutil/sharded_cache.cc	/^void ShardedCache::ApplyToAllCacheEntries(void (*callback)(void*, size_t),$/;"	f	class:rocksutil::ShardedCache
+AsmVolatilePause	rport/port_posix.h	/^static inline void AsmVolatilePause() {$/;"	f	namespace:rocksutil::port
+AssertHeld	rport/port_posix.cc	/^void Mutex::AssertHeld() {$/;"	f	class:rocksutil::port::Mutex
+AssertHeld	rport/port_posix.h	/^  void AssertHeld() { }$/;"	f	class:rocksutil::port::RWMutex
+AutoRollLogger	include/rocksutil/auto_roll_logger.h	/^  AutoRollLogger(Env* env, const std::string& log_path,$/;"	f	class:rocksutil::AutoRollLogger
+AutoRollLogger	include/rocksutil/auto_roll_logger.h	/^class AutoRollLogger : public Logger {$/;"	c	namespace:rocksutil
+BGItem	rutil/threadpool_imp.h	/^  struct BGItem {$/;"	s	class:rocksutil::ThreadPoolImpl
+BGQueue	rutil/threadpool_imp.h	/^  typedef std::deque<BGItem> BGQueue;$/;"	t	class:rocksutil::ThreadPoolImpl
+BGThread	rutil/threadpool_imp.cc	/^void ThreadPoolImpl::BGThread(size_t thread_id) {$/;"	f	class:rocksutil::ThreadPoolImpl
+BGThreadMetadata	rutil/threadpool_imp.cc	/^  BGThreadMetadata(ThreadPoolImpl* thread_pool, size_t thread_id)$/;"	f	struct:rocksutil::BGThreadMetadata
+BGThreadMetadata	rutil/threadpool_imp.cc	/^struct BGThreadMetadata {$/;"	s	namespace:rocksutil	file:
+BGThreadWrapper	rutil/threadpool_imp.cc	/^static void* BGThreadWrapper(void* arg) {$/;"	f	namespace:rocksutil
+BloomHash	include/rocksutil/hash.h	/^inline uint32_t BloomHash(const Slice& key) {$/;"	f	namespace:rocksutil
+BufferStart	rutil/aligned_buffer.h	/^  const char* BufferStart() const {$/;"	f	class:rocksutil::AlignedBuffer
+Busy	include/rocksutil/status.h	/^  static Status Busy(SubCode msg = kNone) { return Status(kBusy, msg); }$/;"	f	class:rocksutil::Status
+Busy	include/rocksutil/status.h	/^  static Status Busy(const Slice& msg, const Slice& msg2 = Slice()) {$/;"	f	class:rocksutil::Status
+CACHE_LINE_SIZE	rport/port_posix.h	/^#define CACHE_LINE_SIZE /;"	d
+CCLD	Makefile	/^CCLD = $(CC)$/;"	m
+CLEAN_FILES	Makefile	/^CLEAN_FILES = # deliberately empty, so we can append below.$/;"	m
+Cache	include/rocksutil/cache.h	/^  Cache() {}$/;"	f	class:rocksutil::Cache
+Cache	include/rocksutil/cache.h	/^class Cache {$/;"	c	namespace:rocksutil
+CacheShard	rutil/sharded_cache.h	/^class CacheShard {$/;"	c	namespace:rocksutil
+Capacity	rutil/aligned_buffer.h	/^  size_t Capacity() const {$/;"	f	class:rocksutil::AlignedBuffer
+Choose_Extend	rutil/crc32c.cc	/^static inline Function Choose_Extend() {$/;"	f	namespace:rocksutil::crc32c
+ChosenExtend	rutil/crc32c.cc	/^Function ChosenExtend = Choose_Extend();$/;"	m	namespace:rocksutil::crc32c	file:
+Clear	rutil/aligned_buffer.h	/^  void Clear() {$/;"	f	class:rocksutil::AlignedBuffer
+Close	rutil/file_reader_writer.cc	/^Status WritableFileWriter::Close() {$/;"	f	class:rocksutil::WritableFileWriter
+Close	rutil/io_posix.cc	/^Status PosixMmapFile::Close() {$/;"	f	class:rocksutil::PosixMmapFile
+Close	rutil/io_posix.cc	/^Status PosixRandomRWFile::Close() {$/;"	f	class:rocksutil::PosixRandomRWFile
+Close	rutil/io_posix.cc	/^Status PosixWritableFile::Close() {$/;"	f	class:rocksutil::PosixWritableFile
+Code	include/rocksutil/status.h	/^  enum Code {$/;"	g	class:rocksutil::Status
+CompareAndSwap	rutil/thread_local.cc	/^bool ThreadLocalPtr::CompareAndSwap(void* ptr, void*& expected) {$/;"	f	class:rocksutil::ThreadLocalPtr
+CompareAndSwap	rutil/thread_local.cc	/^bool ThreadLocalPtr::StaticMeta::CompareAndSwap(uint32_t id, void* ptr,$/;"	f	class:rocksutil::ThreadLocalPtr::StaticMeta
+CondVar	rport/port_posix.cc	/^CondVar::CondVar(Mutex* mu)$/;"	f	class:rocksutil::port::CondVar
+CondVar	rport/port_posix.h	/^class CondVar {$/;"	c	namespace:rocksutil::port
+ConditionSignal	rutil/threadpool_imp.cc	/^int ConditionSignal(Condition condition) {$/;"	f	namespace:rocksutil::__anon5
+ConditionSignalAll	rutil/threadpool_imp.cc	/^int ConditionSignalAll(Condition condition) {$/;"	f	namespace:rocksutil::__anon5
+ConditionWait	rutil/threadpool_imp.cc	/^int ConditionWait(Condition condition, Lock lock) {$/;"	f	namespace:rocksutil::__anon5
+CopyState	rutil/status.cc	/^const char* Status::CopyState(const char* state) {$/;"	f	class:rocksutil::Status
+Corruption	include/rocksutil/status.h	/^  static Status Corruption(SubCode msg = kNone) {$/;"	f	class:rocksutil::Status
+Corruption	include/rocksutil/status.h	/^  static Status Corruption(const Slice& msg, const Slice& msg2 = Slice()) {$/;"	f	class:rocksutil::Status
+Crash	rport/port_posix.cc	/^void Crash(const std::string& srcfile, int srcline) {$/;"	f	namespace:rocksutil::port
+CreateLogger	rutil/auto_roll_logger.cc	/^Status CreateLogger(const std::string& log_path,$/;"	f	namespace:rocksutil
+CurrentSize	rutil/aligned_buffer.h	/^  size_t CurrentSize() const {$/;"	f	class:rocksutil::AlignedBuffer
+DEBUG_LEVEL	Makefile	/^  DEBUG_LEVEL=0$/;"	m
+DEBUG_LEVEL	Makefile	/^  DEBUG_LEVEL=2$/;"	m
+DEBUG_LEVEL	Makefile	/^DEBUG_LEVEL?=0$/;"	m
+DISABLE_WARNING_AS_ERROR	Makefile	/^DISABLE_WARNING_AS_ERROR=1$/;"	m
+DONTNEED	include/rocksutil/env.h	/^  enum AccessPattern { NORMAL, RANDOM, SEQUENTIAL, WILLNEED, DONTNEED };$/;"	e	enum:rocksutil::RandomAccessFile::AccessPattern
+Debug	rutil/env.cc	/^void Debug(Logger* info_log, const char* format, ...) {$/;"	f	namespace:rocksutil
+Debug	rutil/env.cc	/^void Debug(const shared_ptr<Logger>& info_log, const char* format, ...) {$/;"	f	namespace:rocksutil
+DecodeFixed32	include/rocksutil/coding.h	/^inline uint32_t DecodeFixed32(const char* ptr) {$/;"	f	namespace:rocksutil
+DecodeFixed64	include/rocksutil/coding.h	/^inline uint64_t DecodeFixed64(const char* ptr) {$/;"	f	namespace:rocksutil
+Default	rutil/env_posix.cc	/^Env* Env::Default() {$/;"	f	class:rocksutil::Env
+Deleter	examples/lru_cache_example.cc	/^void Deleter(const Slice& key, void* value) {$/;"	f
+Destination	rutil/aligned_buffer.h	/^  char* Destination() {$/;"	f	class:rocksutil::AlignedBuffer
+DirExists	rutil/env_posix.cc	/^  virtual bool DirExists(const std::string& dname) {$/;"	f	class:rocksutil::__anon2::PosixEnv	file:
+DirectIORead	rutil/io_posix.cc	/^Status DirectIORead(int fd, Slice* result, size_t off, size_t n,$/;"	f	namespace:rocksutil::__anon4
+Directory	include/rocksutil/env.h	/^class Directory {$/;"	c	namespace:rocksutil
+DisownData	include/rocksutil/cache.h	/^  virtual void DisownData(){$/;"	f	class:rocksutil::Cache
+DisownData	rutil/lru_cache.cc	/^void LRUCache::DisownData() { shards_ = nullptr; }$/;"	f	class:rocksutil::LRUCache
+EXAMPLES	Makefile	/^EXAMPLES = log_example thread_local_example mutexlock_example thread_pool_example lru_cache_example \\$/;"	m
+EXAMPLE_SOURCE	src.mk	/^EXAMPLE_SOURCE = \\$/;"	m
+EXT4_SUPER_MAGIC	rutil/env_posix.cc	/^#define EXT4_SUPER_MAGIC /;"	d	file:
+EmitPhysicalRecord	rutil/log_writer.cc	/^Status Writer::EmitPhysicalRecord(RecordType t, const char* ptr, size_t n) {$/;"	f	class:rocksutil::log::Writer
+EnableReadAhead	include/rocksutil/env.h	/^  virtual void EnableReadAhead() {}$/;"	f	class:rocksutil::RandomAccessFile
+EnableReadAhead	include/rocksutil/env.h	/^  virtual void EnableReadAhead() {}$/;"	f	class:rocksutil::RandomRWFile
+EncodeFixed32	include/rocksutil/coding.h	/^inline void EncodeFixed32(char* buf, uint32_t value) {$/;"	f	namespace:rocksutil
+EncodeFixed64	include/rocksutil/coding.h	/^inline void EncodeFixed64(char* buf, uint64_t value) {$/;"	f	namespace:rocksutil
+EncodeVarint32	rutil/coding.cc	/^char* EncodeVarint32(char* dst, uint32_t v) {$/;"	f	namespace:rocksutil
+EncodeVarint64	include/rocksutil/coding.h	/^inline char* EncodeVarint64(char* dst, uint64_t v) {$/;"	f	namespace:rocksutil
+EndOfBufferOffset	rutil/log_reader.cc	/^uint64_t Reader::EndOfBufferOffset() {$/;"	f	class:rocksutil::log::Reader
+EndianTransform	include/rocksutil/coding.h	/^inline uint64_t EndianTransform(uint64_t input, size_t size) {$/;"	f	namespace:rocksutil
+Entity	examples/lru_cache_example.cc	/^  Entity(int n) : num_(n) {$/;"	f	class:Entity
+Entity	examples/lru_cache_example.cc	/^class Entity {$/;"	c	file:
+Entry	include/rocksutil/thread_local.h	/^    Entry() : ptr(nullptr) {}$/;"	f	struct:rocksutil::ThreadLocalPtr::Entry
+Entry	include/rocksutil/thread_local.h	/^    Entry(const Entry& e) : ptr(e.ptr.load(std::memory_order_relaxed)) {}$/;"	f	struct:rocksutil::ThreadLocalPtr::Entry
+Entry	include/rocksutil/thread_local.h	/^  struct Entry {$/;"	s	class:rocksutil::ThreadLocalPtr
+Env	include/rocksutil/env.h	/^  Env() {};$/;"	f	class:rocksutil::Env
+Env	include/rocksutil/env.h	/^class Env {$/;"	c	namespace:rocksutil
+EnvOptions	include/rocksutil/env.h	/^struct EnvOptions {$/;"	s	namespace:rocksutil
+EnvOptions	rutil/env.cc	/^EnvOptions::EnvOptions() {$/;"	f	class:rocksutil::EnvOptions
+EnvWrapper	include/rocksutil/env.h	/^  explicit EnvWrapper(Env* t) : target_(t) { }$/;"	f	class:rocksutil::EnvWrapper
+EnvWrapper	include/rocksutil/env.h	/^class EnvWrapper : public Env {$/;"	c	namespace:rocksutil
+Erase	rutil/lru_cache.cc	/^void LRUCacheShard::Erase(const Slice& key, uint32_t hash) {$/;"	f	class:rocksutil::LRUCacheShard
+Erase	rutil/sharded_cache.cc	/^void ShardedCache::Erase(const Slice& key) {$/;"	f	class:rocksutil::ShardedCache
+EraseUnRefEntries	rutil/lru_cache.cc	/^void LRUCacheShard::EraseUnRefEntries() {$/;"	f	class:rocksutil::LRUCacheShard
+EraseUnRefEntries	rutil/sharded_cache.cc	/^void ShardedCache::EraseUnRefEntries() {$/;"	f	class:rocksutil::ShardedCache
+Error	rutil/env.cc	/^void Error(Logger* info_log, const char* format, ...) {$/;"	f	namespace:rocksutil
+Error	rutil/env.cc	/^void Error(const shared_ptr<Logger>& info_log, const char* format, ...) {$/;"	f	namespace:rocksutil
+EvictFromLRU	rutil/lru_cache.cc	/^void LRUCacheShard::EvictFromLRU(size_t charge,$/;"	f	class:rocksutil::LRUCacheShard
+Expired	include/rocksutil/status.h	/^  static Status Expired(SubCode msg = kNone) { return Status(kExpired, msg); }$/;"	f	class:rocksutil::Status
+Expired	include/rocksutil/status.h	/^  static Status Expired(const Slice& msg, const Slice& msg2 = Slice()) {$/;"	f	class:rocksutil::Status
+Extend	rutil/crc32c.cc	/^uint32_t Extend(uint32_t crc, const char* buf, size_t size) {$/;"	f	namespace:rocksutil::crc32c
+ExtendImpl	rutil/crc32c.cc	/^uint32_t ExtendImpl(uint32_t crc, const char* buf, size_t size) {$/;"	f	namespace:rocksutil::crc32c
+Fadvise	rutil/io_posix.cc	/^int Fadvise(int fd, off_t offset, size_t len, int advice) {$/;"	f	namespace:rocksutil
+Fast_CRC32	rutil/crc32c.cc	/^static inline void Fast_CRC32(uint64_t* l, uint8_t const **p) {$/;"	f	namespace:rocksutil::crc32c
+Fatal	rutil/env.cc	/^void Fatal(Logger* info_log, const char* format, ...) {$/;"	f	namespace:rocksutil
+Fatal	rutil/env.cc	/^void Fatal(const shared_ptr<Logger>& info_log, const char* format, ...) {$/;"	f	namespace:rocksutil
+FileAttributes	include/rocksutil/env.h	/^  struct FileAttributes {$/;"	s	class:rocksutil::Env
+FileLock	include/rocksutil/env.h	/^  FileLock() { }$/;"	f	class:rocksutil::FileLock
+FileLock	include/rocksutil/env.h	/^class FileLock {$/;"	c	namespace:rocksutil
+FindPointer	rutil/lru_cache.cc	/^LRUHandle** LRUHandleTable::FindPointer(const Slice& key, uint32_t hash) {$/;"	f	class:rocksutil::LRUHandleTable
+Flush	include/rocksutil/env.h	/^  virtual void Flush() {}$/;"	f	class:rocksutil::Logger
+Flush	rutil/file_reader_writer.cc	/^Status WritableFileWriter::Flush() {$/;"	f	class:rocksutil::WritableFileWriter
+Flush	rutil/io_posix.cc	/^Status PosixMmapFile::Flush() { return Status::OK(); }$/;"	f	class:rocksutil::PosixMmapFile
+Flush	rutil/io_posix.cc	/^Status PosixRandomRWFile::Flush() { return Status::OK(); }$/;"	f	class:rocksutil::PosixRandomRWFile
+Flush	rutil/io_posix.cc	/^Status PosixWritableFile::Flush() { return Status::OK(); }$/;"	f	class:rocksutil::PosixWritableFile
+Fold	rutil/thread_local.cc	/^void ThreadLocalPtr::Fold(FoldFunc func, void* res) {$/;"	f	class:rocksutil::ThreadLocalPtr
+Fold	rutil/thread_local.cc	/^void ThreadLocalPtr::StaticMeta::Fold(uint32_t id, FoldFunc func, void* res) {$/;"	f	class:rocksutil::ThreadLocalPtr::StaticMeta
+FoldFunc	include/rocksutil/thread_local.h	/^  typedef std::function<void(void*, void*)> FoldFunc;$/;"	t	class:rocksutil::ThreadLocalPtr
+Free	rutil/lru_cache.h	/^  void Free() {$/;"	f	struct:rocksutil::LRUHandle
+Fsync	include/rocksutil/env.h	/^  virtual Status Fsync() { return Sync(); }$/;"	f	class:rocksutil::RandomRWFile
+Fsync	include/rocksutil/env.h	/^  virtual Status Fsync() {$/;"	f	class:rocksutil::WritableFile
+Fsync	rutil/io_posix.cc	/^Status PosixDirectory::Fsync() {$/;"	f	class:rocksutil::PosixDirectory
+Fsync	rutil/io_posix.cc	/^Status PosixMmapFile::Fsync() {$/;"	f	class:rocksutil::PosixMmapFile
+Fsync	rutil/io_posix.cc	/^Status PosixRandomRWFile::Fsync() {$/;"	f	class:rocksutil::PosixRandomRWFile
+Fsync	rutil/io_posix.cc	/^Status PosixWritableFile::Fsync() {$/;"	f	class:rocksutil::PosixWritableFile
+Function	rutil/crc32c.cc	/^typedef uint32_t (*Function)(uint32_t, const char*, size_t);$/;"	t	namespace:rocksutil::crc32c	file:
+GenerateUniqueId	rutil/env_posix.cc	/^std::string Env::GenerateUniqueId() {$/;"	f	class:rocksutil::Env
+Get	rutil/thread_local.cc	/^void* ThreadLocalPtr::Get() const {$/;"	f	class:rocksutil::ThreadLocalPtr
+Get	rutil/thread_local.cc	/^void* ThreadLocalPtr::StaticMeta::Get(uint32_t id) const {$/;"	f	class:rocksutil::ThreadLocalPtr::StaticMeta
+GetCapacity	rutil/sharded_cache.cc	/^size_t ShardedCache::GetCapacity() const {$/;"	f	class:rocksutil::ShardedCache
+GetCharge	rutil/lru_cache.cc	/^size_t LRUCache::GetCharge(Handle* handle) const {$/;"	f	class:rocksutil::LRUCache
+GetChildrenFileAttributes	rutil/env.cc	/^Status Env::GetChildrenFileAttributes(const std::string& dir,$/;"	f	class:rocksutil::Env
+GetFileSize	include/rocksutil/env.h	/^  virtual uint64_t GetFileSize() {$/;"	f	class:rocksutil::WritableFile
+GetFileSize	include/rocksutil/file_reader_writer.h	/^  uint64_t GetFileSize() { return filesize_; }$/;"	f	class:rocksutil::WritableFileWriter
+GetFileSize	rutil/io_posix.cc	/^uint64_t PosixMmapFile::GetFileSize() {$/;"	f	class:rocksutil::PosixMmapFile
+GetFileSize	rutil/io_posix.cc	/^uint64_t PosixWritableFile::GetFileSize() { return filesize_; }$/;"	f	class:rocksutil::PosixWritableFile
+GetFirst	examples/thread_local_example.cc	/^  int GetFirst() {$/;"	f	class:LocalData
+GetFixed64	include/rocksutil/coding.h	/^inline bool GetFixed64(Slice* input, uint64_t* value) {$/;"	f	namespace:rocksutil
+GetHandler	rutil/thread_local.cc	/^UnrefHandler ThreadLocalPtr::StaticMeta::GetHandler(uint32_t id) {$/;"	f	class:rocksutil::ThreadLocalPtr::StaticMeta
+GetHash	rutil/lru_cache.cc	/^uint32_t LRUCache::GetHash(Handle* handle) const {$/;"	f	class:rocksutil::LRUCache
+GetHostEnv	rutil/threadpool_imp.h	/^  Env* GetHostEnv() const { return env_; }$/;"	f	class:rocksutil::ThreadPoolImpl
+GetIOPriority	include/rocksutil/env.h	/^  virtual Env::IOPriority GetIOPriority() { return io_priority_; }$/;"	f	class:rocksutil::WritableFile
+GetId	rutil/thread_local.cc	/^uint32_t ThreadLocalPtr::StaticMeta::GetId() {$/;"	f	class:rocksutil::ThreadLocalPtr::StaticMeta
+GetInfoLogLevel	include/rocksutil/env.h	/^  virtual InfoLogLevel GetInfoLogLevel() const { return log_level_; }$/;"	f	class:rocksutil::Logger
+GetLengthPrefixedSlice	include/rocksutil/coding.h	/^inline Slice GetLengthPrefixedSlice(const char* data) {$/;"	f	namespace:rocksutil
+GetLengthPrefixedSlice	include/rocksutil/coding.h	/^inline bool GetLengthPrefixedSlice(Slice* input, Slice* result) {$/;"	f	namespace:rocksutil
+GetLogFileSize	include/rocksutil/env.h	/^  virtual size_t GetLogFileSize() const { return kDoNotSupportGetLogFileSize; }$/;"	f	class:rocksutil::Logger
+GetMaxOpenFiles	rport/port_posix.cc	/^int GetMaxOpenFiles() {$/;"	f	namespace:rocksutil::port
+GetPinnedUsage	rutil/lru_cache.cc	/^size_t LRUCacheShard::GetPinnedUsage() const {$/;"	f	class:rocksutil::LRUCacheShard
+GetPinnedUsage	rutil/sharded_cache.cc	/^size_t ShardedCache::GetPinnedUsage() const {$/;"	f	class:rocksutil::ShardedCache
+GetPreallocationStatus	include/rocksutil/env.h	/^  virtual void GetPreallocationStatus(size_t* block_size,$/;"	f	class:rocksutil::WritableFile
+GetRequiredBufferAlignment	include/rocksutil/env.h	/^  virtual size_t GetRequiredBufferAlignment() const {$/;"	f	class:rocksutil::RandomRWFile
+GetRequiredBufferAlignment	include/rocksutil/env.h	/^  virtual size_t GetRequiredBufferAlignment() const {$/;"	f	class:rocksutil::WritableFile
+GetShard	rutil/lru_cache.cc	/^CacheShard* LRUCache::GetShard(int shard) {$/;"	f	class:rocksutil::LRUCache
+GetShard	rutil/lru_cache.cc	/^const CacheShard* LRUCache::GetShard(int shard) const {$/;"	f	class:rocksutil::LRUCache
+GetSliceHash	include/rocksutil/hash.h	/^inline uint32_t GetSliceHash(const Slice& s) {$/;"	f	namespace:rocksutil
+GetSliceUntil	include/rocksutil/coding.h	/^inline Slice GetSliceUntil(Slice* slice, char delimiter) {$/;"	f	namespace:rocksutil
+GetStatus	include/rocksutil/auto_roll_logger.h	/^  Status GetStatus() {$/;"	f	class:rocksutil::AutoRollLogger
+GetTLSInstance	rutil/random.cc	/^Random* Random::GetTLSInstance() {$/;"	f	class:rocksutil::Random
+GetThreadID	rutil/env.cc	/^uint64_t Env::GetThreadID() const {$/;"	f	class:rocksutil::Env
+GetThreadLocal	rutil/thread_local.cc	/^ThreadLocalPtr::ThreadData* ThreadLocalPtr::StaticMeta::GetThreadLocal() {$/;"	f	class:rocksutil::ThreadLocalPtr::StaticMeta
+GetThreadPoolQueueLen	include/rocksutil/env.h	/^  virtual unsigned int GetThreadPoolQueueLen(Priority pri = LOW) const {$/;"	f	class:rocksutil::Env
+GetThreadPoolQueueLen	rutil/env_posix.cc	/^unsigned int PosixEnv::GetThreadPoolQueueLen(Priority pri) const {$/;"	f	class:rocksutil::__anon2::PosixEnv
+GetThreadPriority	rutil/threadpool_imp.h	/^  Env::Priority GetThreadPriority() const { return priority_; }$/;"	f	class:rocksutil::ThreadPoolImpl
+GetUniqueId	include/rocksutil/env.h	/^  virtual size_t GetUniqueId(char* id, size_t max_size) const {$/;"	f	class:rocksutil::RandomAccessFile
+GetUniqueId	include/rocksutil/env.h	/^  virtual size_t GetUniqueId(char* id, size_t max_size) const {$/;"	f	class:rocksutil::WritableFile
+GetUniqueId	rutil/io_posix.cc	/^size_t PosixRandomAccessFile::GetUniqueId(char* id, size_t max_size) const {$/;"	f	class:rocksutil::PosixRandomAccessFile
+GetUniqueId	rutil/io_posix.cc	/^size_t PosixWritableFile::GetUniqueId(char* id, size_t max_size) const {$/;"	f	class:rocksutil::PosixWritableFile
+GetUniqueIdFromFile	rutil/io_posix.cc	/^size_t PosixHelper::GetUniqueIdFromFile(int fd, char* id, size_t max_size) {$/;"	f	class:rocksutil::PosixHelper
+GetUsage	rutil/lru_cache.cc	/^size_t LRUCacheShard::GetUsage() const {$/;"	f	class:rocksutil::LRUCacheShard
+GetUsage	rutil/sharded_cache.cc	/^size_t ShardedCache::GetUsage() const {$/;"	f	class:rocksutil::ShardedCache
+GetUsage	rutil/sharded_cache.cc	/^size_t ShardedCache::GetUsage(Handle* handle) const {$/;"	f	class:rocksutil::ShardedCache
+GetVarint32	include/rocksutil/coding.h	/^inline bool GetVarint32(Slice* input, uint32_t* value) {$/;"	f	namespace:rocksutil
+GetVarint32Ptr	include/rocksutil/coding.h	/^inline const char* GetVarint32Ptr(const char* p,$/;"	f	namespace:rocksutil
+GetVarint32PtrFallback	rutil/coding.cc	/^const char* GetVarint32PtrFallback(const char* p, const char* limit,$/;"	f	namespace:rocksutil
+GetVarint64	include/rocksutil/coding.h	/^inline bool GetVarint64(Slice* input, uint64_t* value) {$/;"	f	namespace:rocksutil
+GetVarint64Ptr	rutil/coding.cc	/^const char* GetVarint64Ptr(const char* p, const char* limit, uint64_t* value) {$/;"	f	namespace:rocksutil
+GoodSeed	rutil/random.h	/^  static uint32_t GoodSeed(uint32_t s) { return (s & M) != 0 ? (s & M) : 1; }$/;"	f	class:rocksutil::Random
+HIGH	include/rocksutil/cache.h	/^  enum class Priority { HIGH, LOW };$/;"	m	class:rocksutil::Cache::Priority
+HIGH	include/rocksutil/env.h	/^  enum Priority { LOW, HIGH, TOTAL };$/;"	e	enum:rocksutil::Env::Priority
+Handle	include/rocksutil/cache.h	/^  struct Handle {};$/;"	s	class:rocksutil::Cache
+HasExcessiveThread	rutil/threadpool_imp.h	/^  bool HasExcessiveThread() const {$/;"	f	class:rocksutil::ThreadPoolImpl
+HasStrictCapacityLimit	rutil/sharded_cache.cc	/^bool ShardedCache::HasStrictCapacityLimit() const {$/;"	f	class:rocksutil::ShardedCache
+Hash	rutil/hash.cc	/^uint32_t Hash(const char* data, size_t n, uint32_t seed) {$/;"	f	namespace:rocksutil
+HashSlice	rutil/sharded_cache.h	/^  static inline uint32_t HashSlice(const Slice& s) {$/;"	f	class:rocksutil::ShardedCache
+Header	rutil/env.cc	/^void Header(Logger* info_log, const char* format, ...) {$/;"	f	namespace:rocksutil
+Header	rutil/env.cc	/^void Header(const shared_ptr<Logger>& info_log, const char* format, ...) {$/;"	f	namespace:rocksutil
+HighPrioFunc	examples/thread_pool_example.cc	/^void HighPrioFunc(void* arg) {$/;"	f
+HighPrioSlowFunc	examples/thread_pool_example.cc	/^void HighPrioSlowFunc(void* arg) {$/;"	f
+Hint	include/rocksutil/env.h	/^  virtual void Hint(AccessPattern pattern) {}$/;"	f	class:rocksutil::RandomAccessFile
+Hint	rutil/io_posix.cc	/^void PosixRandomAccessFile::Hint(AccessPattern pattern) {$/;"	f	class:rocksutil::PosixRandomAccessFile
+IOError	include/rocksutil/status.h	/^  static Status IOError(SubCode msg = kNone) { return Status(kIOError, msg); }$/;"	f	class:rocksutil::Status
+IOError	include/rocksutil/status.h	/^  static Status IOError(const Slice& msg, const Slice& msg2 = Slice()) {$/;"	f	class:rocksutil::Status
+IOError	rutil/io_posix.h	/^static Status IOError(const std::string& context, int err_number) {$/;"	f	namespace:rocksutil
+IOPRIO_CLASS_SHIFT	rutil/threadpool_imp.cc	/^#define IOPRIO_CLASS_SHIFT /;"	d	file:
+IOPRIO_PRIO_VALUE	rutil/threadpool_imp.cc	/^#define IOPRIO_PRIO_VALUE(/;"	d	file:
+IOPriority	include/rocksutil/env.h	/^  enum IOPriority {$/;"	g	class:rocksutil::Env
+IO_HIGH	include/rocksutil/env.h	/^    IO_HIGH = 1,$/;"	e	enum:rocksutil::Env::IOPriority
+IO_LOW	include/rocksutil/env.h	/^    IO_LOW = 0,$/;"	e	enum:rocksutil::Env::IOPriority
+IO_TOTAL	include/rocksutil/env.h	/^    IO_TOTAL = 2$/;"	e	enum:rocksutil::Env::IOPriority
+InCache	rutil/lru_cache.h	/^  bool InCache() { return flags & 1; }$/;"	f	struct:rocksutil::LRUHandle
+InHighPriPool	rutil/lru_cache.h	/^  bool InHighPriPool() { return flags & 4; }$/;"	f	struct:rocksutil::LRUHandle
+IncBackgroundThreadsIfNeeded	rutil/threadpool_imp.cc	/^void ThreadPoolImpl::IncBackgroundThreadsIfNeeded(int num) {$/;"	f	class:rocksutil::ThreadPoolImpl
+Incomplete	include/rocksutil/status.h	/^  static Status Incomplete(SubCode msg = kNone) {$/;"	f	class:rocksutil::Status
+Incomplete	include/rocksutil/status.h	/^  static Status Incomplete(const Slice& msg, const Slice& msg2 = Slice()) {$/;"	f	class:rocksutil::Status
+Info	rutil/env.cc	/^void Info(Logger* info_log, const char* format, ...) {$/;"	f	namespace:rocksutil
+Info	rutil/env.cc	/^void Info(const shared_ptr<Logger>& info_log, const char* format, ...) {$/;"	f	namespace:rocksutil
+InfoLogFileName	rutil/auto_roll_logger.cc	/^std::string InfoLogFileName(const std::string& log_path) {$/;"	f	namespace:rocksutil
+InitOnce	rport/port_posix.cc	/^void InitOnce(OnceType* once, void (*initializer)()) {$/;"	f	namespace:rocksutil::port
+InitSingletons	rutil/thread_local.cc	/^void ThreadLocalPtr::InitSingletons() { ThreadLocalPtr::Instance(); }$/;"	f	class:rocksutil::ThreadLocalPtr
+Insert	rutil/lru_cache.cc	/^LRUHandle* LRUHandleTable::Insert(LRUHandle* h) {$/;"	f	class:rocksutil::LRUHandleTable
+Insert	rutil/lru_cache.cc	/^Status LRUCacheShard::Insert(const Slice& key, uint32_t hash, void* value,$/;"	f	class:rocksutil::LRUCacheShard
+Insert	rutil/sharded_cache.cc	/^Status ShardedCache::Insert(const Slice& key, void* value, size_t charge,$/;"	f	class:rocksutil::ShardedCache
+Instance	rutil/thread_local.cc	/^ThreadLocalPtr::StaticMeta* ThreadLocalPtr::Instance() {$/;"	f	class:rocksutil::ThreadLocalPtr
+InvalidArgument	include/rocksutil/status.h	/^  static Status InvalidArgument(SubCode msg = kNone) {$/;"	f	class:rocksutil::Status
+InvalidArgument	include/rocksutil/status.h	/^  static Status InvalidArgument(const Slice& msg, const Slice& msg2 = Slice()) {$/;"	f	class:rocksutil::Status
+InvalidateCache	include/rocksutil/env.h	/^  virtual Status InvalidateCache(size_t offset, size_t length) {$/;"	f	class:rocksutil::RandomAccessFile
+InvalidateCache	include/rocksutil/env.h	/^  virtual Status InvalidateCache(size_t offset, size_t length) {$/;"	f	class:rocksutil::SequentialFile
+InvalidateCache	include/rocksutil/env.h	/^  virtual Status InvalidateCache(size_t offset, size_t length) {$/;"	f	class:rocksutil::WritableFile
+InvalidateCache	include/rocksutil/file_reader_writer.h	/^  Status InvalidateCache(size_t offset, size_t length) {$/;"	f	class:rocksutil::WritableFileWriter
+InvalidateCache	rutil/io_posix.cc	/^Status PosixDirectIOSequentialFile::InvalidateCache(size_t \/*offset*\/,$/;"	f	class:rocksutil::PosixDirectIOSequentialFile
+InvalidateCache	rutil/io_posix.cc	/^Status PosixMmapFile::InvalidateCache(size_t offset, size_t length) {$/;"	f	class:rocksutil::PosixMmapFile
+InvalidateCache	rutil/io_posix.cc	/^Status PosixMmapReadableFile::InvalidateCache(size_t offset, size_t length) {$/;"	f	class:rocksutil::PosixMmapReadableFile
+InvalidateCache	rutil/io_posix.cc	/^Status PosixRandomAccessFile::InvalidateCache(size_t offset, size_t length) {$/;"	f	class:rocksutil::PosixRandomAccessFile
+InvalidateCache	rutil/io_posix.cc	/^Status PosixSequentialFile::InvalidateCache(size_t offset, size_t length) {$/;"	f	class:rocksutil::PosixSequentialFile
+InvalidateCache	rutil/io_posix.cc	/^Status PosixWritableFile::InvalidateCache(size_t offset, size_t length) {$/;"	f	class:rocksutil::PosixWritableFile
+IsAborted	include/rocksutil/status.h	/^  bool IsAborted() const { return code() == kAborted; }$/;"	f	class:rocksutil::Status
+IsBusy	include/rocksutil/status.h	/^  bool IsBusy() const { return code() == kBusy; }$/;"	f	class:rocksutil::Status
+IsCorruption	include/rocksutil/status.h	/^  bool IsCorruption() const { return code() == kCorruption; }$/;"	f	class:rocksutil::Status
+IsDeadlock	include/rocksutil/status.h	/^  bool IsDeadlock() const { return code() == kBusy && subcode() == kDeadlock; }$/;"	f	class:rocksutil::Status
+IsEOF	include/rocksutil/log_reader.h	/^  bool IsEOF() {$/;"	f	class:rocksutil::log::Reader
+IsExcessiveThread	rutil/threadpool_imp.h	/^  bool IsExcessiveThread(size_t thread_id) const {$/;"	f	class:rocksutil::ThreadPoolImpl
+IsExpired	include/rocksutil/status.h	/^  bool IsExpired() const { return code() == kExpired; }$/;"	f	class:rocksutil::Status
+IsFastCrc32Supported	rutil/crc32c.cc	/^bool IsFastCrc32Supported() {$/;"	f	namespace:rocksutil::crc32c
+IsHighPri	rutil/lru_cache.h	/^  bool IsHighPri() { return flags & 2; }$/;"	f	struct:rocksutil::LRUHandle
+IsIOError	include/rocksutil/status.h	/^  bool IsIOError() const { return code() == kIOError; }$/;"	f	class:rocksutil::Status
+IsIncomplete	include/rocksutil/status.h	/^  bool IsIncomplete() const { return code() == kIncomplete; }$/;"	f	class:rocksutil::Status
+IsInvalidArgument	include/rocksutil/status.h	/^  bool IsInvalidArgument() const { return code() == kInvalidArgument; }$/;"	f	class:rocksutil::Status
+IsLastExcessiveThread	rutil/threadpool_imp.h	/^  bool IsLastExcessiveThread(size_t thread_id) const {$/;"	f	class:rocksutil::ThreadPoolImpl
+IsLockLimit	include/rocksutil/status.h	/^  bool IsLockLimit() const {$/;"	f	class:rocksutil::Status
+IsMergeInProgress	include/rocksutil/status.h	/^  bool IsMergeInProgress() const { return code() == kMergeInProgress; }$/;"	f	class:rocksutil::Status
+IsNoSpace	include/rocksutil/status.h	/^  bool IsNoSpace() const {$/;"	f	class:rocksutil::Status
+IsNotFound	include/rocksutil/status.h	/^  bool IsNotFound() const { return code() == kNotFound; }$/;"	f	class:rocksutil::Status
+IsNotSupported	include/rocksutil/status.h	/^  bool IsNotSupported() const { return code() == kNotSupported; }$/;"	f	class:rocksutil::Status
+IsPageAligned	rutil/io_posix.cc	/^static bool IsPageAligned(const void* ptr) {$/;"	f	namespace:rocksutil::__anon4
+IsSectorAligned	rutil/io_posix.cc	/^bool IsSectorAligned(const size_t off) { return off % kSectorSize == 0; }$/;"	f	namespace:rocksutil::__anon4
+IsShutdownInProgress	include/rocksutil/status.h	/^  bool IsShutdownInProgress() const { return code() == kShutdownInProgress; }$/;"	f	class:rocksutil::Status
+IsSyncThreadSafe	include/rocksutil/env.h	/^  virtual bool IsSyncThreadSafe() const {$/;"	f	class:rocksutil::WritableFile
+IsSyncThreadSafe	rutil/io_posix.cc	/^bool PosixWritableFile::IsSyncThreadSafe() const { return true; }$/;"	f	class:rocksutil::PosixWritableFile
+IsTimedOut	include/rocksutil/status.h	/^  bool IsTimedOut() const { return code() == kTimedOut; }$/;"	f	class:rocksutil::Status
+IsTryAgain	include/rocksutil/status.h	/^  bool IsTryAgain() const { return code() == kTryAgain; }$/;"	f	class:rocksutil::Status
+JoinAllThreads	rutil/threadpool_imp.cc	/^void ThreadPoolImpl::JoinAllThreads() {$/;"	f	class:rocksutil::ThreadPoolImpl
+LEVELDB_ONCE_INIT	rport/port_posix.h	/^#define LEVELDB_ONCE_INIT /;"	d
+LE_LOAD32	rutil/crc32c.cc	/^static inline uint32_t LE_LOAD32(const uint8_t *p) {$/;"	f	namespace:rocksutil::crc32c
+LE_LOAD64	rutil/crc32c.cc	/^static inline uint64_t LE_LOAD64(const uint8_t *p) {$/;"	f	namespace:rocksutil::crc32c
+LIBNAME	Makefile	/^        LIBNAME=librocksutil$/;"	m
+LIBNAME	Makefile	/^        LIBNAME=librocksutil_debug$/;"	m
+LIBOBJECTS	Makefile	/^LIBOBJECTS = $(LIB_SOURCES:.cc=.o)$/;"	m
+LIBRARY	Makefile	/^LIBRARY = ${LIBNAME}.a$/;"	m
+LIB_SOURCES	src.mk	/^LIB_SOURCES = \\$/;"	m
+LIKELY	rport/likely.h	/^#define LIKELY(/;"	d
+LINK	Makefile	/^LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@$/;"	m
+LOW	include/rocksutil/env.h	/^  enum Priority { LOW, HIGH, TOTAL };$/;"	e	enum:rocksutil::Env::Priority
+LRUCache	rutil/lru_cache.cc	/^LRUCache::LRUCache(size_t capacity, int num_shard_bits,$/;"	f	class:rocksutil::LRUCache
+LRUCache	rutil/lru_cache.h	/^class LRUCache : public ShardedCache {$/;"	c	namespace:rocksutil
+LRUCacheShard	rutil/lru_cache.cc	/^LRUCacheShard::LRUCacheShard()$/;"	f	class:rocksutil::LRUCacheShard
+LRUCacheShard	rutil/lru_cache.h	/^class LRUCacheShard : public CacheShard {$/;"	c	namespace:rocksutil
+LRUHandle	rutil/lru_cache.h	/^struct LRUHandle {$/;"	s	namespace:rocksutil
+LRUHandleTable	rutil/lru_cache.cc	/^LRUHandleTable::LRUHandleTable() : length_(0), elems_(0), list_(nullptr) {$/;"	f	class:rocksutil::LRUHandleTable
+LRUHandleTable	rutil/lru_cache.h	/^class LRUHandleTable {$/;"	c	namespace:rocksutil
+LRU_Insert	rutil/lru_cache.cc	/^void LRUCacheShard::LRU_Insert(LRUHandle* e) {$/;"	f	class:rocksutil::LRUCacheShard
+LRU_Remove	rutil/lru_cache.cc	/^void LRUCacheShard::LRU_Remove(LRUHandle* e) {$/;"	f	class:rocksutil::LRUCacheShard
+LastRecordOffset	rutil/log_reader.cc	/^uint64_t Reader::LastRecordOffset() {$/;"	f	class:rocksutil::log::Reader
+LinkFile	include/rocksutil/env.h	/^  virtual Status LinkFile(const std::string& src, const std::string& target) {$/;"	f	class:rocksutil::Env
+LocalData	examples/thread_local_example.cc	/^  LocalData(int first) {$/;"	f	class:LocalData
+LocalData	examples/thread_local_example.cc	/^class LocalData {$/;"	c	file:
+Lock	rport/port_posix.cc	/^void Mutex::Lock() {$/;"	f	class:rocksutil::port::Mutex
+LockOrUnlock	rutil/env_posix.cc	/^static int LockOrUnlock(const std::string& fname, int fd, bool lock) {$/;"	f	namespace:rocksutil::__anon2
+Log	rutil/env.cc	/^void Log(Logger* info_log, const char* format, ...) {$/;"	f	namespace:rocksutil
+Log	rutil/env.cc	/^void Log(const InfoLogLevel log_level, Logger* info_log, const char* format,$/;"	f	namespace:rocksutil
+Log	rutil/env.cc	/^void Log(const InfoLogLevel log_level, const shared_ptr<Logger>& info_log,$/;"	f	namespace:rocksutil
+Log	rutil/env.cc	/^void Log(const shared_ptr<Logger>& info_log, const char* format, ...) {$/;"	f	namespace:rocksutil
+LogExpired	rutil/auto_roll_logger.cc	/^bool AutoRollLogger::LogExpired() {$/;"	f	class:rocksutil::AutoRollLogger
+LogFlush	rutil/env.cc	/^void LogFlush(Logger *info_log) {$/;"	f	namespace:rocksutil
+LogFlush	rutil/env.cc	/^void LogFlush(const shared_ptr<Logger>& info_log) {$/;"	f	namespace:rocksutil
+LogHeader	include/rocksutil/env.h	/^  virtual void LogHeader(const char* format, va_list ap) {$/;"	f	class:rocksutil::Logger
+LogHeader	rutil/auto_roll_logger.cc	/^void AutoRollLogger::LogHeader(const char* format, va_list args) {$/;"	f	class:rocksutil::AutoRollLogger
+LogInternal	rutil/auto_roll_logger.cc	/^void AutoRollLogger::LogInternal(const char* format, ...) {$/;"	f	class:rocksutil::AutoRollLogger
+LogReporter	include/rocksutil/log_reader.h	/^  struct LogReporter : Reporter {$/;"	s	class:rocksutil::log::Reader
+Logger	include/rocksutil/env.h	/^  Logger(uint64_t flush_every_seconds = 5,$/;"	f	class:rocksutil::Logger
+Logger	include/rocksutil/env.h	/^class Logger {$/;"	c	namespace:rocksutil
+Logv	rutil/auto_roll_logger.cc	/^void AutoRollLogger::Logv(const char* format, va_list ap) {$/;"	f	class:rocksutil::AutoRollLogger
+Logv	rutil/env.cc	/^void Logger::Logv(const InfoLogLevel log_level, const char* format, va_list ap) {$/;"	f	class:rocksutil::Logger
+Lookup	rutil/lru_cache.cc	/^Cache::Handle* LRUCacheShard::Lookup(const Slice& key, uint32_t hash) {$/;"	f	class:rocksutil::LRUCacheShard
+Lookup	rutil/lru_cache.cc	/^LRUHandle* LRUHandleTable::Lookup(const Slice& key, uint32_t hash) {$/;"	f	class:rocksutil::LRUHandleTable
+Lookup	rutil/sharded_cache.cc	/^Cache::Handle* ShardedCache::Lookup(const Slice& key) {$/;"	f	class:rocksutil::ShardedCache
+LowPrioFunc	examples/thread_pool_example.cc	/^void LowPrioFunc(void* arg) {$/;"	f
+Lower	rutil/io_posix.cc	/^size_t Lower(const size_t size, const size_t fac) {$/;"	f	namespace:rocksutil::__anon4
+LowerIOPriority	rutil/threadpool_imp.cc	/^void ThreadPoolImpl::LowerIOPriority() {$/;"	f	class:rocksutil::ThreadPoolImpl
+LowerThreadPoolIOPriority	include/rocksutil/env.h	/^  virtual void LowerThreadPoolIOPriority(Priority pool = LOW) {}$/;"	f	class:rocksutil::Env
+MaintainPoolSize	rutil/lru_cache.cc	/^void LRUCacheShard::MaintainPoolSize() {$/;"	f	class:rocksutil::LRUCacheShard
+MapNewRegion	rutil/io_posix.cc	/^Status PosixMmapFile::MapNewRegion() {$/;"	f	class:rocksutil::PosixMmapFile
+Mask	include/rocksutil/crc32c.h	/^inline uint32_t Mask(uint32_t crc) {$/;"	f	namespace:rocksutil::crc32c
+MemberMutex	include/rocksutil/thread_local.h	/^    port::Mutex* MemberMutex() { return &mutex_; }$/;"	f	class:rocksutil::ThreadLocalPtr::StaticMeta
+MergeInProgress	include/rocksutil/status.h	/^  static Status MergeInProgress(SubCode msg = kNone) {$/;"	f	class:rocksutil::Status
+MergeInProgress	include/rocksutil/status.h	/^  static Status MergeInProgress(const Slice& msg, const Slice& msg2 = Slice()) {$/;"	f	class:rocksutil::Status
+Msg	examples/thread_pool_example.cc	/^struct Msg {$/;"	s	file:
+Msync	rutil/io_posix.cc	/^Status PosixMmapFile::Msync() {$/;"	f	class:rocksutil::PosixMmapFile
+Mutex	rport/port_posix.cc	/^Mutex::Mutex(bool adaptive) {$/;"	f	class:rocksutil::port::Mutex
+Mutex	rport/port_posix.h	/^class Mutex {$/;"	c	namespace:rocksutil::port
+Mutex	rutil/thread_local.cc	/^port::Mutex* ThreadLocalPtr::StaticMeta::Mutex() { return &Instance()->mutex_; }$/;"	f	class:rocksutil::ThreadLocalPtr::StaticMeta
+MutexLock	include/rocksutil/mutexlock.h	/^  explicit MutexLock(port::Mutex *mu) : mu_(mu) {$/;"	f	class:rocksutil::MutexLock
+MutexLock	include/rocksutil/mutexlock.h	/^class MutexLock {$/;"	c	namespace:rocksutil
+MutexUnlock	rutil/threadpool_imp.cc	/^int MutexUnlock(Lock mutex) {$/;"	f	namespace:rocksutil::__anon5
+NORMAL	include/rocksutil/env.h	/^  enum AccessPattern { NORMAL, RANDOM, SEQUENTIAL, WILLNEED, DONTNEED };$/;"	e	enum:rocksutil::RandomAccessFile::AccessPattern
+NewAligned	rutil/io_posix.cc	/^std::unique_ptr<void, void (&)(void*)> NewAligned(const size_t size) {$/;"	f	namespace:rocksutil::__anon4
+NewId	rutil/sharded_cache.cc	/^uint64_t ShardedCache::NewId() {$/;"	f	class:rocksutil::ShardedCache
+NewLRUCache	rutil/lru_cache.cc	/^std::shared_ptr<Cache> NewLRUCache(size_t capacity, int num_shard_bits,$/;"	f	namespace:rocksutil
+NewRandomAccessFile	rutil/file_reader_writer.cc	/^Status NewRandomAccessFile(Env* env, const std::string& fname,$/;"	f	namespace:rocksutil
+NewRandomRWFile	include/rocksutil/env.h	/^  virtual Status NewRandomRWFile(const std::string& fname,$/;"	f	class:rocksutil::Env
+NewReadaheadRandomAccessFile	rutil/file_reader_writer.cc	/^std::unique_ptr<RandomAccessFile> NewReadaheadRandomAccessFile($/;"	f	namespace:rocksutil
+NewSequentialFile	rutil/file_reader_writer.cc	/^Status NewSequentialFile(Env* env, const std::string& fname,$/;"	f	namespace:rocksutil
+NewThreadPool	rutil/threadpool_imp.cc	/^ThreadPool* NewThreadPool(int num_threads) {$/;"	f	namespace:rocksutil
+NewWritableFile	rutil/file_reader_writer.cc	/^Status NewWritableFile(Env* env, const std::string& fname,$/;"	f	namespace:rocksutil
+Next	rutil/random.h	/^  uint32_t Next() {$/;"	f	class:rocksutil::Random
+Next	rutil/random.h	/^  uint64_t Next() { return generator_(); }$/;"	f	class:rocksutil::Random64
+NoSpace	include/rocksutil/status.h	/^  static Status NoSpace() { return Status(kIOError, kNoSpace); }$/;"	f	class:rocksutil::Status
+NoSpace	include/rocksutil/status.h	/^  static Status NoSpace(const Slice& msg, const Slice& msg2 = Slice()) {$/;"	f	class:rocksutil::Status
+NotFound	include/rocksutil/status.h	/^  static Status NotFound(SubCode msg = kNone) { return Status(kNotFound, msg); }$/;"	f	class:rocksutil::Status
+NotFound	include/rocksutil/status.h	/^  static Status NotFound(const Slice& msg, const Slice& msg2 = Slice()) {$/;"	f	class:rocksutil::Status
+NotSupported	include/rocksutil/status.h	/^  static Status NotSupported(SubCode msg = kNone) {$/;"	f	class:rocksutil::Status
+NotSupported	include/rocksutil/status.h	/^  static Status NotSupported(const Slice& msg, const Slice& msg2 = Slice()) {$/;"	f	class:rocksutil::Status
+NowNanos	include/rocksutil/env.h	/^  virtual uint64_t NowNanos() {$/;"	f	class:rocksutil::Env
+OK	include/rocksutil/status.h	/^  static Status OK() { return Status(); }$/;"	f	class:rocksutil::Status
+OPT	Makefile	/^OPT=$/;"	m
+OldInfoLogFileName	rutil/auto_roll_logger.cc	/^static std::string OldInfoLogFileName(const std::string& log_path,$/;"	f	namespace:rocksutil
+OnThreadExit	rutil/thread_local.cc	/^void ThreadLocalPtr::StaticMeta::OnThreadExit(void* ptr) {$/;"	f	class:rocksutil::ThreadLocalPtr::StaticMeta
+OnceType	rport/port_posix.h	/^typedef pthread_once_t OnceType;$/;"	t	namespace:rocksutil::port
+OneIn	rutil/random.h	/^  bool OneIn(int n) { return (Next() % n) == 0; }$/;"	f	class:rocksutil::Random
+OneIn	rutil/random.h	/^  bool OneIn(uint64_t n) { return Uniform(n) == 0; }$/;"	f	class:rocksutil::Random64
+OptimizeForLogWrite	rutil/env.cc	/^EnvOptions Env::OptimizeForLogWrite(const EnvOptions& env_options) const {$/;"	f	class:rocksutil::Env
+OptimizeForManifestWrite	rutil/env.cc	/^EnvOptions Env::OptimizeForManifestWrite(const EnvOptions& env_options) const {$/;"	f	class:rocksutil::Env
+PLATFORM_IS_LITTLE_ENDIAN	rport/port_posix.h	/^    #define PLATFORM_IS_LITTLE_ENDIAN /;"	d
+PLATFORM_IS_LITTLE_ENDIAN	rport/port_posix.h	/^  #define PLATFORM_IS_LITTLE_ENDIAN /;"	d
+PLATFORM_IS_LITTLE_ENDIAN	rport/port_posix.h	/^#define PLATFORM_IS_LITTLE_ENDIAN /;"	d
+PLATFORM_IS_LITTLE_ENDIAN	rport/port_posix.h	/^#undef PLATFORM_IS_LITTLE_ENDIAN$/;"	d
+PORT_LIKELY_H_	rport/likely.h	/^#define PORT_LIKELY_H_$/;"	d
+POSIX_FADV_DONTNEED	rutil/io_posix.h	/^#define POSIX_FADV_DONTNEED /;"	d
+POSIX_FADV_NORMAL	rutil/io_posix.h	/^#define POSIX_FADV_NORMAL /;"	d
+POSIX_FADV_RANDOM	rutil/io_posix.h	/^#define POSIX_FADV_RANDOM /;"	d
+POSIX_FADV_SEQUENTIAL	rutil/io_posix.h	/^#define POSIX_FADV_SEQUENTIAL /;"	d
+POSIX_FADV_WILLNEED	rutil/io_posix.h	/^#define POSIX_FADV_WILLNEED /;"	d
+PREFETCH	rport/port_posix.h	/^#define PREFETCH(/;"	d
+PadToAlignmentWith	rutil/aligned_buffer.h	/^  void PadToAlignmentWith(int padding) {$/;"	f	class:rocksutil::AlignedBuffer
+PeekId	rutil/thread_local.cc	/^uint32_t ThreadLocalPtr::StaticMeta::PeekId() const {$/;"	f	class:rocksutil::ThreadLocalPtr::StaticMeta
+PhysicalCoreID	rport/port_posix.cc	/^int PhysicalCoreID() {$/;"	f	namespace:rocksutil::port
+PositionedAppend	include/rocksutil/env.h	/^  virtual Status PositionedAppend(const Slice& \/* data *\/, uint64_t \/* offset *\/) {$/;"	f	class:rocksutil::WritableFile
+PositionedAppend	rutil/io_posix.cc	/^Status PosixDirectIOWritableFile::PositionedAppend(const Slice& data,$/;"	f	class:rocksutil::PosixDirectIOWritableFile
+PositionedAppend	rutil/io_posix.cc	/^Status PosixWritableFile::PositionedAppend(const Slice& data, uint64_t offset) {$/;"	f	class:rocksutil::PosixWritableFile
+PosixDirectIORandomAccessFile	rutil/io_posix.h	/^  explicit PosixDirectIORandomAccessFile(const std::string& filename, int fd)$/;"	f	class:rocksutil::PosixDirectIORandomAccessFile
+PosixDirectIORandomAccessFile	rutil/io_posix.h	/^class PosixDirectIORandomAccessFile : public PosixRandomAccessFile {$/;"	c	namespace:rocksutil
+PosixDirectIOSequentialFile	rutil/io_posix.h	/^  explicit PosixDirectIOSequentialFile(const std::string& filename, int fd)$/;"	f	class:rocksutil::PosixDirectIOSequentialFile
+PosixDirectIOSequentialFile	rutil/io_posix.h	/^class PosixDirectIOSequentialFile : public SequentialFile {$/;"	c	namespace:rocksutil
+PosixDirectIOWritableFile	rutil/io_posix.h	/^  explicit PosixDirectIOWritableFile(const std::string& filename, int fd)$/;"	f	class:rocksutil::PosixDirectIOWritableFile
+PosixDirectIOWritableFile	rutil/io_posix.h	/^class PosixDirectIOWritableFile : public PosixWritableFile {$/;"	c	namespace:rocksutil
+PosixDirectory	rutil/io_posix.h	/^  explicit PosixDirectory(int fd) : fd_(fd) {}$/;"	f	class:rocksutil::PosixDirectory
+PosixDirectory	rutil/io_posix.h	/^class PosixDirectory : public Directory {$/;"	c	namespace:rocksutil
+PosixEnv	rutil/env_posix.cc	/^PosixEnv::PosixEnv()$/;"	f	class:rocksutil::__anon2::PosixEnv
+PosixEnv	rutil/env_posix.cc	/^class PosixEnv : public Env {$/;"	c	namespace:rocksutil::__anon2	file:
+PosixFileLock	rutil/env_posix.cc	/^class PosixFileLock : public FileLock {$/;"	c	namespace:rocksutil::__anon2	file:
+PosixHelper	rutil/io_posix.h	/^class PosixHelper {$/;"	c	namespace:rocksutil
+PosixLogger	rutil/posix_logger.h	/^  PosixLogger(FILE* f, uint64_t (*gettid)(), Env* env,$/;"	f	class:rocksutil::PosixLogger
+PosixLogger	rutil/posix_logger.h	/^class PosixLogger : public Logger {$/;"	c	namespace:rocksutil
+PosixMmapFile	rutil/io_posix.cc	/^PosixMmapFile::PosixMmapFile(const std::string& fname, int fd, size_t page_size,$/;"	f	class:rocksutil::PosixMmapFile
+PosixMmapFile	rutil/io_posix.h	/^class PosixMmapFile : public WritableFile {$/;"	c	namespace:rocksutil
+PosixMmapReadableFile	rutil/io_posix.cc	/^PosixMmapReadableFile::PosixMmapReadableFile(const int fd,$/;"	f	class:rocksutil::PosixMmapReadableFile
+PosixMmapReadableFile	rutil/io_posix.h	/^class PosixMmapReadableFile : public RandomAccessFile {$/;"	c	namespace:rocksutil
+PosixRandomAccessFile	rutil/io_posix.cc	/^PosixRandomAccessFile::PosixRandomAccessFile(const std::string& fname, int fd,$/;"	f	class:rocksutil::PosixRandomAccessFile
+PosixRandomAccessFile	rutil/io_posix.h	/^class PosixRandomAccessFile : public RandomAccessFile {$/;"	c	namespace:rocksutil
+PosixRandomRWFile	rutil/io_posix.cc	/^PosixRandomRWFile::PosixRandomRWFile(const std::string& fname, int fd,$/;"	f	class:rocksutil::PosixRandomRWFile
+PosixRandomRWFile	rutil/io_posix.h	/^class PosixRandomRWFile : public RandomRWFile {$/;"	c	namespace:rocksutil
+PosixSequentialFile	rutil/io_posix.cc	/^PosixSequentialFile::PosixSequentialFile(const std::string& fname, FILE* f,$/;"	f	class:rocksutil::PosixSequentialFile
+PosixSequentialFile	rutil/io_posix.h	/^class PosixSequentialFile : public SequentialFile {$/;"	c	namespace:rocksutil
+PosixWritableFile	rutil/io_posix.cc	/^PosixWritableFile::PosixWritableFile(const std::string& fname, int fd,$/;"	f	class:rocksutil::PosixWritableFile
+PosixWritableFile	rutil/io_posix.h	/^class PosixWritableFile : public WritableFile {$/;"	c	namespace:rocksutil
+PrepareWrite	include/rocksutil/env.h	/^  virtual void PrepareWrite(size_t offset, size_t len) {$/;"	f	class:rocksutil::WritableFile
+Priority	include/rocksutil/cache.h	/^  enum class Priority { HIGH, LOW };$/;"	c	class:rocksutil::Cache
+Priority	include/rocksutil/env.h	/^  enum Priority { LOW, HIGH, TOTAL };$/;"	g	class:rocksutil::Env
+PthreadCall	rport/port_posix.cc	/^static int PthreadCall(const char* label, int result) {$/;"	f	namespace:rocksutil::port
+PthreadCall	rutil/threadpool_imp.cc	/^void ThreadPoolImpl::PthreadCall(const char* label, int result) {$/;"	f	class:rocksutil::ThreadPoolImpl
+PutFixed32	include/rocksutil/coding.h	/^inline void PutFixed32(std::string* dst, uint32_t value) {$/;"	f	namespace:rocksutil
+PutFixed64	include/rocksutil/coding.h	/^inline void PutFixed64(std::string* dst, uint64_t value) {$/;"	f	namespace:rocksutil
+PutLengthPrefixedSlice	include/rocksutil/coding.h	/^inline void PutLengthPrefixedSlice(std::string* dst, const Slice& value) {$/;"	f	namespace:rocksutil
+PutLengthPrefixedSliceParts	include/rocksutil/coding.h	/^inline void PutLengthPrefixedSliceParts(std::string* dst,$/;"	f	namespace:rocksutil
+PutVarint32	include/rocksutil/coding.h	/^inline void PutVarint32(std::string* dst, uint32_t v) {$/;"	f	namespace:rocksutil
+PutVarint32Varint32	include/rocksutil/coding.h	/^inline void PutVarint32Varint32(std::string* dst, uint32_t v1, uint32_t v2) {$/;"	f	namespace:rocksutil
+PutVarint32Varint32Varint32	include/rocksutil/coding.h	/^inline void PutVarint32Varint32Varint32(std::string* dst, uint32_t v1,$/;"	f	namespace:rocksutil
+PutVarint32Varint32Varint64	include/rocksutil/coding.h	/^inline void PutVarint32Varint32Varint64(std::string* dst, uint32_t v1,$/;"	f	namespace:rocksutil
+PutVarint32Varint64	include/rocksutil/coding.h	/^inline void PutVarint32Varint64(std::string* dst, uint32_t v1, uint64_t v2) {$/;"	f	namespace:rocksutil
+PutVarint64	include/rocksutil/coding.h	/^inline void PutVarint64(std::string* dst, uint64_t v) {$/;"	f	namespace:rocksutil
+PutVarint64Varint64	include/rocksutil/coding.h	/^inline void PutVarint64Varint64(std::string* dst, uint64_t v1, uint64_t v2) {$/;"	f	namespace:rocksutil
+RANDOM	include/rocksutil/env.h	/^  enum AccessPattern { NORMAL, RANDOM, SEQUENTIAL, WILLNEED, DONTNEED };$/;"	e	enum:rocksutil::RandomAccessFile::AccessPattern
+ROCKSUTIL_MAJOR	Makefile	/^ROCKSUTIL_MAJOR = $(shell egrep "ROCKSUTIL_MAJOR.[0-9]" include\/rocksutil\/version.h | cut -d ' ' -f 3)$/;"	m
+ROCKSUTIL_MAJOR	include/rocksutil/version.h	/^#define ROCKSUTIL_MAJOR /;"	d
+ROCKSUTIL_MINOR	Makefile	/^ROCKSUTIL_MINOR = $(shell egrep "ROCKSUTIL_MINOR.[0-9]" include\/rocksutil\/version.h | cut -d ' ' -f 3)$/;"	m
+ROCKSUTIL_MINOR	include/rocksutil/version.h	/^#define ROCKSUTIL_MINOR /;"	d
+ROCKSUTIL_NOEXCEPT	rport/port_posix.h	/^#define ROCKSUTIL_NOEXCEPT /;"	d
+ROCKSUTIL_PATCH	Makefile	/^ROCKSUTIL_PATCH = $(shell egrep "ROCKSUTIL_PATCH.[0-9]" include\/rocksutil\/version.h | cut -d ' ' -f 3)$/;"	m
+ROCKSUTIL_PATCH	include/rocksutil/version.h	/^#define ROCKSUTIL_PATCH /;"	d
+ROCKSUTIL_PRIszt	rport/port_posix.h	/^#define ROCKSUTIL_PRIszt /;"	d
+ROCKSUTIL_SUPPORT_THREAD_LOCAL	include/rocksutil/thread_local.h	/^#define ROCKSUTIL_SUPPORT_THREAD_LOCAL /;"	d
+RWMutex	rport/port_posix.cc	/^RWMutex::RWMutex() {$/;"	f	class:rocksutil::port::RWMutex
+RWMutex	rport/port_posix.h	/^class RWMutex {$/;"	c	namespace:rocksutil::port
+Random	rutil/random.h	/^  explicit Random(uint32_t s) : seed_(GoodSeed(s)) {}$/;"	f	class:rocksutil::Random
+Random	rutil/random.h	/^class Random {$/;"	c	namespace:rocksutil
+Random64	rutil/random.h	/^  explicit Random64(uint64_t s) : generator_(s) { }$/;"	f	class:rocksutil::Random64
+Random64	rutil/random.h	/^class Random64 {$/;"	c	namespace:rocksutil
+RandomAccessFile	include/rocksutil/env.h	/^  RandomAccessFile() { }$/;"	f	class:rocksutil::RandomAccessFile
+RandomAccessFile	include/rocksutil/env.h	/^class RandomAccessFile {$/;"	c	namespace:rocksutil
+RandomAccessFileReader	include/rocksutil/file_reader_writer.h	/^  explicit RandomAccessFileReader(std::unique_ptr<RandomAccessFile>&& raf)$/;"	f	class:rocksutil::RandomAccessFileReader
+RandomAccessFileReader	include/rocksutil/file_reader_writer.h	/^class RandomAccessFileReader {$/;"	c	namespace:rocksutil
+RandomRWFile	include/rocksutil/env.h	/^  RandomRWFile() {}$/;"	f	class:rocksutil::RandomRWFile
+RandomRWFile	include/rocksutil/env.h	/^class RandomRWFile {$/;"	c	namespace:rocksutil
+RangeSync	include/rocksutil/env.h	/^  virtual Status RangeSync(uint64_t offset, uint64_t nbytes) { return Status::OK(); }$/;"	f	class:rocksutil::WritableFile
+RangeSync	rutil/file_reader_writer.cc	/^Status WritableFileWriter::RangeSync(uint64_t offset, uint64_t nbytes) {$/;"	f	class:rocksutil::WritableFileWriter
+RangeSync	rutil/io_posix.cc	/^Status PosixWritableFile::RangeSync(uint64_t offset, uint64_t nbytes) {$/;"	f	class:rocksutil::PosixWritableFile
+Read	rutil/aligned_buffer.h	/^  size_t Read(char* dest, size_t offset, size_t read_size) const {$/;"	f	class:rocksutil::AlignedBuffer
+Read	rutil/file_reader_writer.cc	/^Status RandomAccessFileReader::Read(uint64_t offset, size_t n, Slice* result,$/;"	f	class:rocksutil::RandomAccessFileReader
+Read	rutil/file_reader_writer.cc	/^Status SequentialFileReader::Read(size_t n, Slice* result, char* scratch) {$/;"	f	class:rocksutil::SequentialFileReader
+Read	rutil/io_posix.cc	/^Status PosixDirectIORandomAccessFile::Read(uint64_t offset, size_t n,$/;"	f	class:rocksutil::PosixDirectIORandomAccessFile
+Read	rutil/io_posix.cc	/^Status PosixDirectIOSequentialFile::Read(size_t n, Slice* result,$/;"	f	class:rocksutil::PosixDirectIOSequentialFile
+Read	rutil/io_posix.cc	/^Status PosixMmapReadableFile::Read(uint64_t offset, size_t n, Slice* result,$/;"	f	class:rocksutil::PosixMmapReadableFile
+Read	rutil/io_posix.cc	/^Status PosixRandomAccessFile::Read(uint64_t offset, size_t n, Slice* result,$/;"	f	class:rocksutil::PosixRandomAccessFile
+Read	rutil/io_posix.cc	/^Status PosixRandomRWFile::Read(uint64_t offset, size_t n, Slice* result,$/;"	f	class:rocksutil::PosixRandomRWFile
+Read	rutil/io_posix.cc	/^Status PosixSequentialFile::Read(size_t n, Slice* result, char* scratch) {$/;"	f	class:rocksutil::PosixSequentialFile
+ReadAligned	rutil/io_posix.cc	/^Status ReadAligned(int fd, Slice* data, const uint64_t offset,$/;"	f	namespace:rocksutil::__anon4
+ReadFileToString	rutil/env.cc	/^Status ReadFileToString(Env* env, const std::string& fname, std::string* data) {$/;"	f	namespace:rocksutil
+ReadLock	include/rocksutil/mutexlock.h	/^  explicit ReadLock(port::RWMutex *mu) : mu_(mu) {$/;"	f	class:rocksutil::ReadLock
+ReadLock	include/rocksutil/mutexlock.h	/^class ReadLock {$/;"	c	namespace:rocksutil
+ReadLock	rport/port_posix.cc	/^void RWMutex::ReadLock() { PthreadCall("read lock", pthread_rwlock_rdlock(&mu_)); }$/;"	f	class:rocksutil::port::RWMutex
+ReadMore	rutil/log_reader.cc	/^bool Reader::ReadMore(size_t* drop_size, int *error) {$/;"	f	class:rocksutil::log::Reader
+ReadPhysicalRecord	rutil/log_reader.cc	/^unsigned int Reader::ReadPhysicalRecord(Slice* result, size_t* drop_size) {$/;"	f	class:rocksutil::log::Reader
+ReadRecord	rutil/log_reader.cc	/^bool Reader::ReadRecord(Slice* record, std::string* scratch,$/;"	f	class:rocksutil::log::Reader
+ReadUnaligned	rutil/io_posix.cc	/^Status ReadUnaligned(int fd, Slice* data, const uint64_t offset,$/;"	f	namespace:rocksutil::__anon4
+ReadUnlock	include/rocksutil/mutexlock.h	/^  explicit ReadUnlock(port::RWMutex *mu) : mu_(mu) { mu->AssertHeld(); }$/;"	f	class:rocksutil::ReadUnlock
+ReadUnlock	include/rocksutil/mutexlock.h	/^class ReadUnlock {$/;"	c	namespace:rocksutil
+ReadUnlock	rport/port_posix.cc	/^void RWMutex::ReadUnlock() { PthreadCall("read unlock", pthread_rwlock_unlock(&mu_)); }$/;"	f	class:rocksutil::port::RWMutex
+ReadaheadRandomAccessFile	rutil/file_reader_writer.cc	/^  ReadaheadRandomAccessFile(std::unique_ptr<RandomAccessFile>&& file,$/;"	f	class:rocksutil::__anon3::ReadaheadRandomAccessFile
+ReadaheadRandomAccessFile	rutil/file_reader_writer.cc	/^class ReadaheadRandomAccessFile : public RandomAccessFile {\/\/--$/;"	c	namespace:rocksutil::__anon3	file:
+Reader	include/rocksutil/log_reader.h	/^class Reader {$/;"	c	namespace:rocksutil::log
+Reader	rutil/log_reader.cc	/^Reader::Reader(unique_ptr<SequentialFileReader>&& _file, Reporter* reporter,$/;"	f	class:rocksutil::log::Reader
+ReaderFunc	examples/wal_example.cc	/^void ReaderFunc() {$/;"	f
+ReclaimId	rutil/thread_local.cc	/^void ThreadLocalPtr::StaticMeta::ReclaimId(uint32_t id) {$/;"	f	class:rocksutil::ThreadLocalPtr::StaticMeta
+RecordType	rutil/log_format.h	/^enum RecordType {$/;"	g	namespace:rocksutil::log
+RefitTail	rutil/aligned_buffer.h	/^  void RefitTail(size_t tail_offset, size_t tail_size) {$/;"	f	class:rocksutil::AlignedBuffer
+Release	rutil/lru_cache.cc	/^void LRUCacheShard::Release(Cache::Handle* handle) {$/;"	f	class:rocksutil::LRUCacheShard
+Release	rutil/sharded_cache.cc	/^void ShardedCache::Release(Handle* handle) {$/;"	f	class:rocksutil::ShardedCache
+Remove	rutil/lru_cache.cc	/^LRUHandle* LRUHandleTable::Remove(const Slice& key, uint32_t hash) {$/;"	f	class:rocksutil::LRUHandleTable
+RemoveThreadData	rutil/thread_local.cc	/^void ThreadLocalPtr::StaticMeta::RemoveThreadData($/;"	f	class:rocksutil::ThreadLocalPtr::StaticMeta
+ReportCorruption	rutil/log_reader.cc	/^void Reader::ReportCorruption(size_t bytes, const char* reason) {$/;"	f	class:rocksutil::log::Reader
+ReportDrop	rutil/log_reader.cc	/^void Reader::ReportDrop(size_t bytes, const Status& reason) {$/;"	f	class:rocksutil::log::Reader
+Reporter	include/rocksutil/log_reader.h	/^  class Reporter {$/;"	c	class:rocksutil::log::Reader
+Reset	rutil/random.h	/^  void Reset(uint32_t s) { seed_ = GoodSeed(s); }$/;"	f	class:rocksutil::Random
+Reset	rutil/thread_local.cc	/^void ThreadLocalPtr::Reset(void* ptr) {$/;"	f	class:rocksutil::ThreadLocalPtr
+Reset	rutil/thread_local.cc	/^void ThreadLocalPtr::StaticMeta::Reset(uint32_t id, void* ptr) {$/;"	f	class:rocksutil::ThreadLocalPtr::StaticMeta
+ResetLogger	rutil/auto_roll_logger.cc	/^Status AutoRollLogger::ResetLogger() {$/;"	f	class:rocksutil::AutoRollLogger
+Resize	rutil/lru_cache.cc	/^void LRUHandleTable::Resize() {$/;"	f	class:rocksutil::LRUHandleTable
+ReuseWritableFile	rutil/env.cc	/^Status Env::ReuseWritableFile(const std::string& fname,$/;"	f	class:rocksutil::Env
+RollLogFile	rutil/auto_roll_logger.cc	/^void AutoRollLogger::RollLogFile() {$/;"	f	class:rocksutil::AutoRollLogger
+Roundup	rutil/aligned_buffer.h	/^inline size_t Roundup(size_t x, size_t y) {$/;"	f	namespace:rocksutil
+Roundup	rutil/io_posix.h	/^  static size_t Roundup(size_t x, size_t y) { return ((x + y - 1) \/ y) * y; }$/;"	f	class:rocksutil::PosixMmapFile
+SEQUENTIAL	include/rocksutil/env.h	/^  enum AccessPattern { NORMAL, RANDOM, SEQUENTIAL, WILLNEED, DONTNEED };$/;"	e	enum:rocksutil::RandomAccessFile::AccessPattern
+SHARED	Makefile	/^SHARED = $(SHARED1) $(SHARED2) $(SHARED3) $(SHARED4)$/;"	m
+SHARED	Makefile	/^SHARED = $(SHARED1)$/;"	m
+SHARED1	Makefile	/^SHARED1 = ${LIBNAME}.$(PLATFORM_SHARED_EXT)$/;"	m
+SHARED2	Makefile	/^SHARED2 = $(SHARED1)$/;"	m
+SHARED2	Makefile	/^SHARED2 = $(SHARED1).$(SHARED_MAJOR)$/;"	m
+SHARED2	Makefile	/^SHARED2 = $(SHARED_OSX).$(PLATFORM_SHARED_EXT)$/;"	m
+SHARED3	Makefile	/^SHARED3 = $(SHARED1)$/;"	m
+SHARED3	Makefile	/^SHARED3 = $(SHARED1).$(SHARED_MAJOR).$(SHARED_MINOR)$/;"	m
+SHARED3	Makefile	/^SHARED3 = $(SHARED_OSX).$(SHARED_MINOR).$(PLATFORM_SHARED_EXT)$/;"	m
+SHARED4	Makefile	/^SHARED4 = $(SHARED1)$/;"	m
+SHARED4	Makefile	/^SHARED4 = $(SHARED1).$(SHARED_MAJOR).$(SHARED_MINOR).$(SHARED_PATCH)$/;"	m
+SHARED4	Makefile	/^SHARED4 = $(SHARED_OSX).$(SHARED_MINOR).$(SHARED_PATCH).$(PLATFORM_SHARED_EXT)$/;"	m
+SHARED_MAJOR	Makefile	/^SHARED_MAJOR = $(ROCKSUTIL_MAJOR)$/;"	m
+SHARED_MINOR	Makefile	/^SHARED_MINOR = $(ROCKSUTIL_MINOR)$/;"	m
+SHARED_OSX	Makefile	/^SHARED_OSX = $(LIBNAME).$(SHARED_MAJOR)$/;"	m
+SHARED_PATCH	Makefile	/^SHARED_PATCH = $(ROCKSUTIL_PATCH)$/;"	m
+STEP1	rutil/crc32c.cc	/^#define STEP1 /;"	d	file:
+STEP1	rutil/crc32c.cc	/^#undef STEP1$/;"	d	file:
+STORAGE_DECL	rutil/random.cc	/^#define STORAGE_DECL /;"	d	file:
+STORAGE_LEVELDB_PORT_SYS_TIME_H_	rport/sys_time.h	/^#define STORAGE_LEVELDB_PORT_SYS_TIME_H_$/;"	d
+STORAGE_LEVELDB_PORT_UTIL_LOGGER_H_	rport/util_logger.h	/^#define STORAGE_LEVELDB_PORT_UTIL_LOGGER_H_$/;"	d
+STORAGE_ROCKSUTIL_INCLUDE_ENV_H_	include/rocksutil/env.h	/^#define STORAGE_ROCKSUTIL_INCLUDE_ENV_H_$/;"	d
+STORAGE_ROCKSUTIL_INCLUDE_SLICE_H_	include/rocksutil/slice.h	/^#define STORAGE_ROCKSUTIL_INCLUDE_SLICE_H_$/;"	d
+STORAGE_ROCKSUTIL_INCLUDE_STATUS_H_	include/rocksutil/status.h	/^#define STORAGE_ROCKSUTIL_INCLUDE_STATUS_H_$/;"	d
+Schedule	rutil/env_posix.cc	/^void PosixEnv::Schedule(void (*function)(void* arg1), void* arg, Priority pri,$/;"	f	class:rocksutil::__anon2::PosixEnv
+Schedule	rutil/threadpool_imp.cc	/^void ThreadPoolImpl::Schedule(void (*function)(void* arg1), void* arg,$/;"	f	class:rocksutil::ThreadPoolImpl
+Scrape	rutil/thread_local.cc	/^void ThreadLocalPtr::Scrape(autovector<void*>* ptrs, void* const replacement) {$/;"	f	class:rocksutil::ThreadLocalPtr
+Scrape	rutil/thread_local.cc	/^void ThreadLocalPtr::StaticMeta::Scrape(uint32_t id, autovector<void*>* ptrs,$/;"	f	class:rocksutil::ThreadLocalPtr::StaticMeta
+SequentialFile	include/rocksutil/env.h	/^  SequentialFile() { }$/;"	f	class:rocksutil::SequentialFile
+SequentialFile	include/rocksutil/env.h	/^class SequentialFile {$/;"	c	namespace:rocksutil
+SequentialFileReader	include/rocksutil/file_reader_writer.h	/^  explicit SequentialFileReader(std::unique_ptr<SequentialFile>&& _file)$/;"	f	class:rocksutil::SequentialFileReader
+SequentialFileReader	include/rocksutil/file_reader_writer.h	/^class SequentialFileReader {$/;"	c	namespace:rocksutil
+SetBackgroundThreads	rutil/threadpool_imp.cc	/^void ThreadPoolImpl::SetBackgroundThreads(int num) {$/;"	f	class:rocksutil::ThreadPoolImpl
+SetBackgroundThreadsInternal	rutil/threadpool_imp.cc	/^void ThreadPoolImpl::SetBackgroundThreadsInternal(int num, bool allow_reduce) {$/;"	f	class:rocksutil::ThreadPoolImpl
+SetCallNowMicrosEveryNRecords	include/rocksutil/auto_roll_logger.h	/^  void SetCallNowMicrosEveryNRecords(uint64_t call_NowMicros_every_N_records) {$/;"	f	class:rocksutil::AutoRollLogger
+SetCapacity	rutil/lru_cache.cc	/^void LRUCacheShard::SetCapacity(size_t capacity) {$/;"	f	class:rocksutil::LRUCacheShard
+SetCapacity	rutil/sharded_cache.cc	/^void ShardedCache::SetCapacity(size_t capacity) {$/;"	f	class:rocksutil::ShardedCache
+SetFD_CLOEXEC	rutil/env_posix.cc	/^  void SetFD_CLOEXEC(int fd, const EnvOptions* options) {$/;"	f	class:rocksutil::__anon2::PosixEnv
+SetFirst	examples/thread_local_example.cc	/^  void SetFirst(int num) {$/;"	f	class:LocalData
+SetHandler	rutil/thread_local.cc	/^void ThreadLocalPtr::StaticMeta::SetHandler(uint32_t id, UnrefHandler handler) {$/;"	f	class:rocksutil::ThreadLocalPtr::StaticMeta
+SetHighPriorityPoolRatio	rutil/lru_cache.cc	/^void LRUCacheShard::SetHighPriorityPoolRatio(double high_pri_pool_ratio) {$/;"	f	class:rocksutil::LRUCacheShard
+SetHostEnv	rutil/threadpool_imp.h	/^  void SetHostEnv(Env* env) { env_ = env; }$/;"	f	class:rocksutil::ThreadPoolImpl
+SetIOPriority	include/rocksutil/env.h	/^  virtual void SetIOPriority(Env::IOPriority pri) {$/;"	f	class:rocksutil::WritableFile
+SetInCache	rutil/lru_cache.h	/^  void SetInCache(bool in_cache) {$/;"	f	struct:rocksutil::LRUHandle
+SetInHighPriPool	rutil/lru_cache.h	/^  void SetInHighPriPool(bool in_high_pri_pool) {$/;"	f	struct:rocksutil::LRUHandle
+SetInfoLogLevel	include/rocksutil/env.h	/^  virtual void SetInfoLogLevel(const InfoLogLevel log_level) {$/;"	f	class:rocksutil::Logger
+SetPreallocationBlockSize	include/rocksutil/env.h	/^  virtual void SetPreallocationBlockSize(size_t size) {$/;"	f	class:rocksutil::WritableFile
+SetPriority	rutil/lru_cache.h	/^  void SetPriority(Cache::Priority priority) {$/;"	f	struct:rocksutil::LRUHandle
+SetStrictCapacityLimit	rutil/lru_cache.cc	/^void LRUCacheShard::SetStrictCapacityLimit(bool strict_capacity_limit) {$/;"	f	class:rocksutil::LRUCacheShard
+SetStrictCapacityLimit	rutil/sharded_cache.cc	/^void ShardedCache::SetStrictCapacityLimit(bool strict_capacity_limit) {$/;"	f	class:rocksutil::ShardedCache
+SetThreadPriority	rutil/threadpool_imp.h	/^  void SetThreadPriority(Env::Priority priority) { priority_ = priority; }$/;"	f	class:rocksutil::ThreadPoolImpl
+Shard	rutil/sharded_cache.h	/^  uint32_t Shard(uint32_t hash) {$/;"	f	class:rocksutil::ShardedCache
+ShardedCache	rutil/sharded_cache.cc	/^ShardedCache::ShardedCache(size_t capacity, int num_shard_bits,$/;"	f	class:rocksutil::ShardedCache
+ShardedCache	rutil/sharded_cache.h	/^class ShardedCache : public Cache {$/;"	c	namespace:rocksutil
+ShouldForwardRawRequest	include/rocksutil/env.h	/^  virtual bool ShouldForwardRawRequest() const {$/;"	f	class:rocksutil::RandomAccessFile
+ShouldForwardRawRequest	include/rocksutil/env.h	/^  virtual bool ShouldForwardRawRequest() const {$/;"	f	class:rocksutil::RandomRWFile
+ShutdownInProgress	include/rocksutil/status.h	/^  static Status ShutdownInProgress(SubCode msg = kNone) {$/;"	f	class:rocksutil::Status
+ShutdownInProgress	include/rocksutil/status.h	/^  static Status ShutdownInProgress(const Slice& msg,$/;"	f	class:rocksutil::Status
+Signal	rport/port_posix.cc	/^void CondVar::Signal() {$/;"	f	class:rocksutil::port::CondVar
+SignalAll	rport/port_posix.cc	/^void CondVar::SignalAll() {$/;"	f	class:rocksutil::port::CondVar
+Size	rutil/aligned_buffer.h	/^  void Size(size_t cursize) {$/;"	f	class:rocksutil::AlignedBuffer
+Skewed	rutil/random.h	/^  uint32_t Skewed(int max_log) {$/;"	f	class:rocksutil::Random
+Skewed	rutil/random.h	/^  uint64_t Skewed(int max_log) {$/;"	f	class:rocksutil::Random64
+Skip	rutil/file_reader_writer.cc	/^Status SequentialFileReader::Skip(uint64_t n) { return file_->Skip(n); }$/;"	f	class:rocksutil::SequentialFileReader
+Skip	rutil/io_posix.cc	/^Status PosixDirectIOSequentialFile::Skip(uint64_t n) {$/;"	f	class:rocksutil::PosixDirectIOSequentialFile
+Skip	rutil/io_posix.cc	/^Status PosixSequentialFile::Skip(uint64_t n) {$/;"	f	class:rocksutil::PosixSequentialFile
+SkipToInitialBlock	rutil/log_reader.cc	/^bool Reader::SkipToInitialBlock() {$/;"	f	class:rocksutil::log::Reader
+Slice	include/rocksutil/slice.h	/^  Slice() : data_(""), size_(0) { }$/;"	f	class:rocksutil::Slice
+Slice	include/rocksutil/slice.h	/^  Slice(const char* d, size_t n) : data_(d), size_(n) { }$/;"	f	class:rocksutil::Slice
+Slice	include/rocksutil/slice.h	/^  Slice(const char* s) : data_(s), size_(strlen(s)) { }$/;"	f	class:rocksutil::Slice
+Slice	include/rocksutil/slice.h	/^  Slice(const std::string& s) : data_(s.data()), size_(s.size()) { }$/;"	f	class:rocksutil::Slice
+Slice	include/rocksutil/slice.h	/^class Slice {$/;"	c	namespace:rocksutil
+SliceHasher	include/rocksutil/hash.h	/^struct SliceHasher {$/;"	s	namespace:rocksutil
+SliceParts	include/rocksutil/slice.h	/^  SliceParts() : parts(nullptr), num_parts(0) {}$/;"	f	struct:rocksutil::SliceParts
+SliceParts	include/rocksutil/slice.h	/^  SliceParts(const Slice* _parts, int _num_parts) :$/;"	f	struct:rocksutil::SliceParts
+SliceParts	include/rocksutil/slice.h	/^struct SliceParts {$/;"	s	namespace:rocksutil
+Slow_CRC32	rutil/crc32c.cc	/^static inline void Slow_CRC32(uint64_t* l, uint8_t const **p) {$/;"	f	namespace:rocksutil::crc32c
+SpinMutex	include/rocksutil/mutexlock.h	/^  SpinMutex() : locked_(false) {}$/;"	f	class:rocksutil::SpinMutex
+SpinMutex	include/rocksutil/mutexlock.h	/^class SpinMutex {$/;"	c	namespace:rocksutil
+StartBGThreads	rutil/threadpool_imp.cc	/^void ThreadPoolImpl::StartBGThreads() {$/;"	f	class:rocksutil::ThreadPoolImpl
+StartThread	rutil/env_posix.cc	/^void PosixEnv::StartThread(void (*function)(void* arg), void* arg) {$/;"	f	class:rocksutil::__anon2::PosixEnv
+StartThreadState	rutil/env_posix.cc	/^struct StartThreadState {$/;"	s	namespace:rocksutil::__anon2	file:
+StartThreadWrapper	rutil/env_posix.cc	/^static void* StartThreadWrapper(void* arg) {$/;"	f	namespace:rocksutil::__anon2
+StaticMeta	include/rocksutil/thread_local.h	/^  class StaticMeta {$/;"	c	class:rocksutil::ThreadLocalPtr
+StaticMeta	rutil/thread_local.cc	/^ThreadLocalPtr::StaticMeta::StaticMeta() : next_instance_id_(0), head_(this) {$/;"	f	class:rocksutil::ThreadLocalPtr::StaticMeta
+Status	include/rocksutil/status.h	/^    : Status() {$/;"	f	namespace:rocksutil
+Status	include/rocksutil/status.h	/^  Status() : code_(kOk), subcode_(kNone), state_(nullptr) {}$/;"	f	class:rocksutil::Status
+Status	include/rocksutil/status.h	/^  Status(Code _code, const Slice& msg, const Slice& msg2)$/;"	f	class:rocksutil::Status
+Status	include/rocksutil/status.h	/^  explicit Status(Code _code, SubCode _subcode = kNone)$/;"	f	class:rocksutil::Status
+Status	include/rocksutil/status.h	/^class Status {$/;"	c	namespace:rocksutil
+Status	include/rocksutil/status.h	/^inline Status::Status(const Status& s) : code_(s.code_), subcode_(s.subcode_) {$/;"	f	class:rocksutil::Status
+Status	rutil/status.cc	/^Status::Status(Code _code, SubCode _subcode, const Slice& msg, const Slice& msg2)$/;"	f	class:rocksutil::Status
+StringSplit	rutil/string_util.cc	/^std::vector<std::string> StringSplit(const std::string& arg, char delim) {$/;"	f	namespace:rocksutil
+SubCode	include/rocksutil/status.h	/^  enum SubCode {$/;"	g	class:rocksutil::Status
+SupportsFastAllocate	rutil/env_posix.cc	/^  bool SupportsFastAllocate(const std::string& path) {$/;"	f	class:rocksutil::__anon2::PosixEnv	file:
+Swap	rutil/thread_local.cc	/^void* ThreadLocalPtr::StaticMeta::Swap(uint32_t id, void* ptr) {$/;"	f	class:rocksutil::ThreadLocalPtr::StaticMeta
+Swap	rutil/thread_local.cc	/^void* ThreadLocalPtr::Swap(void* ptr) {$/;"	f	class:rocksutil::ThreadLocalPtr
+Sync	rutil/file_reader_writer.cc	/^Status WritableFileWriter::Sync(bool use_fsync) {$/;"	f	class:rocksutil::WritableFileWriter
+Sync	rutil/io_posix.cc	/^Status PosixMmapFile::Sync() {$/;"	f	class:rocksutil::PosixMmapFile
+Sync	rutil/io_posix.cc	/^Status PosixRandomRWFile::Sync() {$/;"	f	class:rocksutil::PosixRandomRWFile
+Sync	rutil/io_posix.cc	/^Status PosixWritableFile::Sync() {$/;"	f	class:rocksutil::PosixWritableFile
+SyncInternal	rutil/file_reader_writer.cc	/^Status WritableFileWriter::SyncInternal(bool use_fsync) {$/;"	f	class:rocksutil::WritableFileWriter
+SyncWithoutFlush	rutil/file_reader_writer.cc	/^Status WritableFileWriter::SyncWithoutFlush(bool use_fsync) {$/;"	f	class:rocksutil::WritableFileWriter
+TEST_GetLRUList	rutil/lru_cache.cc	/^void LRUCacheShard::TEST_GetLRUList(LRUHandle** lru, LRUHandle** lru_low_pri) {$/;"	f	class:rocksutil::LRUCacheShard
+TEST_log_fname	include/rocksutil/auto_roll_logger.h	/^  std::string TEST_log_fname() const {$/;"	f	class:rocksutil::AutoRollLogger
+TMPFS_MAGIC	rutil/env_posix.cc	/^#define TMPFS_MAGIC /;"	d	file:
+TOTAL	include/rocksutil/env.h	/^  enum Priority { LOW, HIGH, TOTAL };$/;"	e	enum:rocksutil::Env::Priority
+ThreadData	include/rocksutil/thread_local.h	/^    explicit ThreadData(StaticMeta* _inst) : entries(), inst(_inst) {}$/;"	f	struct:rocksutil::ThreadLocalPtr::ThreadData
+ThreadData	include/rocksutil/thread_local.h	/^  struct ThreadData {$/;"	s	class:rocksutil::ThreadLocalPtr
+ThreadDetach	rutil/threadpool_imp.cc	/^int ThreadDetach(pthread_t& thread) {$/;"	f	namespace:rocksutil::__anon5
+ThreadJoin	rutil/threadpool_imp.cc	/^void ThreadJoin(pthread_t& thread) {$/;"	f	namespace:rocksutil::__anon5
+ThreadLocalPtr	include/rocksutil/thread_local.h	/^class ThreadLocalPtr {$/;"	c	namespace:rocksutil
+ThreadLocalPtr	rutil/thread_local.cc	/^ThreadLocalPtr::ThreadLocalPtr(UnrefHandler handler)$/;"	f	class:rocksutil::ThreadLocalPtr
+ThreadPool	rutil/threadpool.h	/^class ThreadPool {$/;"	c	namespace:rocksutil
+ThreadPoolImpl	rutil/threadpool_imp.cc	/^ThreadPoolImpl::ThreadPoolImpl()$/;"	f	class:rocksutil::ThreadPoolImpl
+ThreadPoolImpl	rutil/threadpool_imp.h	/^class ThreadPoolImpl : public ThreadPool {$/;"	c	namespace:rocksutil
+ThreadPoolMutexLock	rutil/threadpool_imp.cc	/^inline int ThreadPoolMutexLock(Lock mutex) {$/;"	f	namespace:rocksutil::__anon5
+TimedOut	include/rocksutil/status.h	/^  static Status TimedOut(SubCode msg = kNone) { return Status(kTimedOut, msg); }$/;"	f	class:rocksutil::Status
+TimedOut	include/rocksutil/status.h	/^  static Status TimedOut(const Slice& msg, const Slice& msg2 = Slice()) {$/;"	f	class:rocksutil::Status
+TimedWait	rport/port_posix.cc	/^bool CondVar::TimedWait(uint64_t abs_time_us) {$/;"	f	class:rocksutil::port::CondVar
+ToString	rutil/status.cc	/^std::string Status::ToString() const {$/;"	f	class:rocksutil::Status
+ToString	rutil/string_util.h	/^inline std::string ToString(T value) {$/;"	f	namespace:rocksutil
+Truncate	include/rocksutil/env.h	/^  virtual Status Truncate(uint64_t size) {$/;"	f	class:rocksutil::WritableFile
+TruncateToPageBoundary	rutil/aligned_buffer.h	/^inline size_t TruncateToPageBoundary(size_t page_size, size_t s) {$/;"	f	namespace:rocksutil
+TruncateToPageBoundary	rutil/io_posix.h	/^  size_t TruncateToPageBoundary(size_t s) {$/;"	f	class:rocksutil::PosixMmapFile
+TryAgain	include/rocksutil/status.h	/^  static Status TryAgain(SubCode msg = kNone) { return Status(kTryAgain, msg); }$/;"	f	class:rocksutil::Status
+TryAgain	include/rocksutil/status.h	/^  static Status TryAgain(const Slice& msg, const Slice& msg2 = Slice()) {$/;"	f	class:rocksutil::Status
+UNLIKELY	rport/likely.h	/^#define UNLIKELY(/;"	d
+UnSchedule	include/rocksutil/env.h	/^  virtual int UnSchedule(void* arg, Priority pri) { return 0; }$/;"	f	class:rocksutil::Env
+UnSchedule	rutil/env_posix.cc	/^int PosixEnv::UnSchedule(void* arg, Priority pri) {$/;"	f	class:rocksutil::__anon2::PosixEnv
+UnSchedule	rutil/threadpool_imp.cc	/^int ThreadPoolImpl::UnSchedule(void* arg) {$/;"	f	class:rocksutil::ThreadPoolImpl
+Uniform	rutil/random.h	/^  uint32_t Uniform(int n) { return Next() % n; }$/;"	f	class:rocksutil::Random
+Uniform	rutil/random.h	/^  uint64_t Uniform(uint64_t n) {$/;"	f	class:rocksutil::Random64
+Unlock	rport/port_posix.cc	/^void Mutex::Unlock() {$/;"	f	class:rocksutil::port::Mutex
+UnmapCurrentRegion	rutil/io_posix.cc	/^Status PosixMmapFile::UnmapCurrentRegion() {$/;"	f	class:rocksutil::PosixMmapFile
+UnmarkEOF	rutil/log_reader.cc	/^void Reader::UnmarkEOF() {$/;"	f	class:rocksutil::log::Reader
+Unmask	include/rocksutil/crc32c.h	/^inline uint32_t Unmask(uint32_t masked_crc) {$/;"	f	namespace:rocksutil::crc32c
+Unref	rutil/lru_cache.cc	/^bool LRUCacheShard::Unref(LRUHandle* e) {$/;"	f	class:rocksutil::LRUCacheShard
+UnrefHandle	examples/thread_local_example.cc	/^void UnrefHandle(void* ptr) {$/;"	f
+UnrefHandler	include/rocksutil/thread_local.h	/^typedef void (*UnrefHandler)(void* ptr);$/;"	t	namespace:rocksutil
+Upper	rutil/io_posix.cc	/^size_t Upper(const size_t size, const size_t fac) {$/;"	f	namespace:rocksutil::__anon4
+UseDirectIO	include/rocksutil/env.h	/^  virtual bool UseDirectIO() const { return false; }$/;"	f	class:rocksutil::WritableFile
+UseOSBuffer	include/rocksutil/env.h	/^  virtual bool UseOSBuffer() const {$/;"	f	class:rocksutil::RandomRWFile
+UseOSBuffer	include/rocksutil/env.h	/^  virtual bool UseOSBuffer() const {$/;"	f	class:rocksutil::WritableFile
+ValistToString	rutil/auto_roll_logger.cc	/^std::string AutoRollLogger::ValistToString(const char* format,$/;"	f	class:rocksutil::AutoRollLogger
+Value	include/rocksutil/crc32c.h	/^inline uint32_t Value(const char* data, size_t n) {$/;"	f	namespace:rocksutil::crc32c
+Value	rutil/lru_cache.cc	/^void* LRUCache::Value(Handle* handle) {$/;"	f	class:rocksutil::LRUCache
+VarintLength	include/rocksutil/coding.h	/^inline int VarintLength(uint64_t v) {$/;"	f	namespace:rocksutil
+VisitLocalData	examples/thread_local_example.cc	/^void VisitLocalData(ThreadLocalPtr* thread_local_ptr, int first) {$/;"	f
+WALRecoveryMode	include/rocksutil/log_reader.h	/^enum class WALRecoveryMode : char {$/;"	c	namespace:rocksutil::log
+WARNING_FLAGS	Makefile	/^WARNING_FLAGS = -W -Wextra -Wall -Wsign-compare -Wshadow \\$/;"	m
+WILLNEED	include/rocksutil/env.h	/^  enum AccessPattern { NORMAL, RANDOM, SEQUENTIAL, WILLNEED, DONTNEED };$/;"	e	enum:rocksutil::RandomAccessFile::AccessPattern
+Wait	rport/port_posix.cc	/^void CondVar::Wait() {$/;"	f	class:rocksutil::port::CondVar
+WaitForJoin	include/rocksutil/env.h	/^  virtual void WaitForJoin() {}$/;"	f	class:rocksutil::Env
+WaitForJoin	rutil/env_posix.cc	/^void PosixEnv::WaitForJoin() {$/;"	f	class:rocksutil::__anon2::PosixEnv
+WakeUpAllThreads	rutil/threadpool_imp.cc	/^void ThreadPoolImpl::WakeUpAllThreads() {$/;"	f	class:rocksutil::ThreadPoolImpl
+Warn	rutil/env.cc	/^void Warn(Logger* info_log, const char* format, ...) {$/;"	f	namespace:rocksutil
+Warn	rutil/env.cc	/^void Warn(const shared_ptr<Logger>& info_log, const char* format, ...) {$/;"	f	namespace:rocksutil
+WritableFile	include/rocksutil/env.h	/^  WritableFile()$/;"	f	class:rocksutil::WritableFile
+WritableFile	include/rocksutil/env.h	/^class WritableFile {$/;"	c	namespace:rocksutil
+WritableFileWrapper	include/rocksutil/env.h	/^  explicit WritableFileWrapper(WritableFile* t) : target_(t) { }$/;"	f	class:rocksutil::WritableFileWrapper
+WritableFileWrapper	include/rocksutil/env.h	/^class WritableFileWrapper : public WritableFile {$/;"	c	namespace:rocksutil
+WritableFileWriter	include/rocksutil/file_reader_writer.h	/^  WritableFileWriter(std::unique_ptr<WritableFile>&& file,$/;"	f	class:rocksutil::WritableFileWriter
+WritableFileWriter	include/rocksutil/file_reader_writer.h	/^class WritableFileWriter {$/;"	c	namespace:rocksutil
+Write	rutil/io_posix.cc	/^Status PosixRandomRWFile::Write(uint64_t offset, const Slice& data) {$/;"	f	class:rocksutil::PosixRandomRWFile
+WriteBuffered	rutil/file_reader_writer.cc	/^Status WritableFileWriter::WriteBuffered(const char* data, size_t size) {$/;"	f	class:rocksutil::WritableFileWriter
+WriteHeaderInfo	rutil/auto_roll_logger.cc	/^void AutoRollLogger::WriteHeaderInfo() {$/;"	f	class:rocksutil::AutoRollLogger
+WriteLock	include/rocksutil/mutexlock.h	/^  explicit WriteLock(port::RWMutex *mu) : mu_(mu) {$/;"	f	class:rocksutil::WriteLock
+WriteLock	include/rocksutil/mutexlock.h	/^class WriteLock {$/;"	c	namespace:rocksutil
+WriteLock	rport/port_posix.cc	/^void RWMutex::WriteLock() { PthreadCall("write lock", pthread_rwlock_wrlock(&mu_)); }$/;"	f	class:rocksutil::port::RWMutex
+WriteLog	examples/log_example.cc	/^void WriteLog(std::shared_ptr<Logger>log, int thread_num) {$/;"	f
+WriteStringToFile	rutil/env.cc	/^Status WriteStringToFile(Env* env, const Slice& data, const std::string& fname,$/;"	f	namespace:rocksutil
+WriteUnbuffered	rutil/file_reader_writer.cc	/^Status WritableFileWriter::WriteUnbuffered() {$/;"	f	class:rocksutil::WritableFileWriter
+WriteUnlock	rport/port_posix.cc	/^void RWMutex::WriteUnlock() { PthreadCall("write unlock", pthread_rwlock_unlock(&mu_)); }$/;"	f	class:rocksutil::port::RWMutex
+Writer	include/rocksutil/log_writer.h	/^class Writer {$/;"	c	namespace:rocksutil::log
+Writer	rutil/log_writer.cc	/^Writer::Writer(unique_ptr<WritableFileWriter>&& dest,$/;"	f	class:rocksutil::log::Writer
+WriterFunc	examples/wal_example.cc	/^void WriterFunc() {$/;"	f
+XFS_SUPER_MAGIC	rutil/env_posix.cc	/^#define XFS_SUPER_MAGIC /;"	d	file:
+__declspec	rport/port_posix.h	/^#define __declspec(/;"	d
+alignment_	rutil/aligned_buffer.h	/^  size_t alignment_;$/;"	m	class:rocksutil::AlignedBuffer
+allow_fallocate	include/rocksutil/env.h	/^  bool allow_fallocate = true;$/;"	m	struct:rocksutil::EnvOptions
+allow_fallocate_	rutil/io_posix.h	/^  bool allow_fallocate_;  \/\/ If false, fallocate calls are bypassed$/;"	m	class:rocksutil::PosixMmapFile
+allow_fallocate_	rutil/io_posix.h	/^  bool allow_fallocate_;$/;"	m	class:rocksutil::PosixWritableFile
+am__v_AR_	Makefile	/^am__v_AR_ = $(am__v_AR_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_AR_0	Makefile	/^am__v_AR_0 = @echo "  AR      " $@;$/;"	m
+am__v_AR_1	Makefile	/^am__v_AR_1 =$/;"	m
+am__v_CCLD_	Makefile	/^am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CCLD_0	Makefile	/^am__v_CCLD_0 = @echo "  CCLD    " $@;$/;"	m
+am__v_CCLD_1	Makefile	/^am__v_CCLD_1 =$/;"	m
+am__v_CC_	Makefile	/^am__v_CC_ = $(am__v_CC_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CC_0	Makefile	/^am__v_CC_0 = @echo "  CC      " $@;$/;"	m
+am__v_CC_1	Makefile	/^am__v_CC_1 =$/;"	m
+am__v_GEN_	Makefile	/^am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_GEN_0	Makefile	/^am__v_GEN_0 = @echo "  GEN     " $@;$/;"	m
+am__v_GEN_1	Makefile	/^am__v_GEN_1 =$/;"	m
+am__v_at_	Makefile	/^am__v_at_ = $(am__v_at_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_at_0	Makefile	/^am__v_at_0 = @$/;"	m
+am__v_at_1	Makefile	/^am__v_at_1 =$/;"	m
+arg	rutil/env_posix.cc	/^  void* arg;$/;"	m	struct:rocksutil::__anon2::StartThreadState	file:
+arg	rutil/threadpool_imp.h	/^    void* arg;$/;"	m	struct:rocksutil::ThreadPoolImpl::BGItem
+array	examples/thread_local_example.cc	/^  int* array;$/;"	m	class:LocalData	file:
+assign	rutil/autovector.h	/^autovector<T, kSize>& autovector<T, kSize>::assign(const autovector& other) {$/;"	f	class:rocksutil::autovector
+at	rutil/autovector.h	/^  const_reference at(size_type n) const {$/;"	f	class:rocksutil::autovector
+at	rutil/autovector.h	/^  reference at(size_type n) {$/;"	f	class:rocksutil::autovector
+autovector	rutil/autovector.h	/^  autovector(const autovector& other) { assign(other); }$/;"	f	class:rocksutil::autovector
+autovector	rutil/autovector.h	/^  autovector(std::initializer_list<T> init_list) {$/;"	f	class:rocksutil::autovector
+autovector	rutil/autovector.h	/^class autovector {$/;"	c	namespace:rocksutil
+back	rutil/autovector.h	/^  const_reference back() const {$/;"	f	class:rocksutil::autovector
+back	rutil/autovector.h	/^  reference back() {$/;"	f	class:rocksutil::autovector
+backing_store_	include/rocksutil/log_reader.h	/^  char* const backing_store_;$/;"	m	class:rocksutil::log::Reader
+base_	rutil/io_posix.h	/^  char* base_;            \/\/ The mapped region$/;"	m	class:rocksutil::PosixMmapFile
+begin	rutil/autovector.h	/^  const_iterator begin() const { return const_iterator(this, 0); }$/;"	f	class:rocksutil::autovector
+begin	rutil/autovector.h	/^  iterator begin() { return iterator(this, 0); }$/;"	f	class:rocksutil::autovector
+bgsignal_	rutil/threadpool_imp.h	/^  pthread_cond_t bgsignal_;$/;"	m	class:rocksutil::ThreadPoolImpl
+bgthreads_	rutil/threadpool_imp.h	/^  std::vector<pthread_t> bgthreads_;$/;"	m	class:rocksutil::ThreadPoolImpl
+block_offset_	include/rocksutil/log_writer.h	/^  size_t block_offset_;       \/\/ Current offset in block$/;"	m	class:rocksutil::log::Writer
+buf_	include/rocksutil/file_reader_writer.h	/^  AlignedBuffer           buf_;$/;"	m	class:rocksutil::WritableFileWriter
+buf_	rutil/aligned_buffer.h	/^  std::unique_ptr<char[]> buf_;$/;"	m	class:rocksutil::AlignedBuffer
+buffer_	include/rocksutil/log_reader.h	/^  Slice buffer_;$/;"	m	class:rocksutil::log::Reader
+buffer_	rutil/file_reader_writer.cc	/^  mutable std::unique_ptr<char[]> buffer_;$/;"	m	class:rocksutil::__anon3::ReadaheadRandomAccessFile	file:
+buffer_len_	rutil/file_reader_writer.cc	/^  mutable size_t       buffer_len_;$/;"	m	class:rocksutil::__anon3::ReadaheadRandomAccessFile	file:
+buffer_offset_	rutil/file_reader_writer.cc	/^  mutable uint64_t     buffer_offset_;$/;"	m	class:rocksutil::__anon3::ReadaheadRandomAccessFile	file:
+bufstart_	rutil/aligned_buffer.h	/^  char* bufstart_;$/;"	m	class:rocksutil::AlignedBuffer
+bytes_per_sync	include/rocksutil/env.h	/^  uint64_t bytes_per_sync = 0;$/;"	m	struct:rocksutil::EnvOptions
+bytes_per_sync_	include/rocksutil/file_reader_writer.h	/^  uint64_t                bytes_per_sync_;$/;"	m	class:rocksutil::WritableFileWriter
+c_DefaultPageSize	include/rocksutil/env.h	/^  const size_t c_DefaultPageSize = 4 * 1024;$/;"	m	class:rocksutil::RandomRWFile
+c_DefaultPageSize	include/rocksutil/env.h	/^  const size_t c_DefaultPageSize = 4 * 1024;$/;"	m	class:rocksutil::WritableFile
+cached_now	include/rocksutil/auto_roll_logger.h	/^  uint64_t cached_now;$/;"	m	class:rocksutil::AutoRollLogger
+cached_now_access_count	include/rocksutil/auto_roll_logger.h	/^  uint64_t cached_now_access_count;$/;"	m	class:rocksutil::AutoRollLogger
+call_NowMicros_every_N_records_	include/rocksutil/auto_roll_logger.h	/^  uint64_t call_NowMicros_every_N_records_;$/;"	m	class:rocksutil::AutoRollLogger
+capacity_	rutil/aligned_buffer.h	/^  size_t capacity_;$/;"	m	class:rocksutil::AlignedBuffer
+capacity_	rutil/lru_cache.h	/^  size_t capacity_;$/;"	m	class:rocksutil::LRUCacheShard
+capacity_	rutil/sharded_cache.h	/^  size_t capacity_;$/;"	m	class:rocksutil::ShardedCache
+capacity_mutex_	rutil/sharded_cache.h	/^  mutable port::Mutex capacity_mutex_;$/;"	m	class:rocksutil::ShardedCache
+charge	rutil/lru_cache.h	/^  size_t charge;  \/\/ TODO(opt): Only allow uint32_t?$/;"	m	struct:rocksutil::LRUHandle
+checkedDiskForMmap_	rutil/env_posix.cc	/^  bool checkedDiskForMmap_;$/;"	m	class:rocksutil::__anon2::PosixEnv	file:
+checksum_	include/rocksutil/log_reader.h	/^  bool const checksum_;$/;"	m	class:rocksutil::log::Reader
+clear	include/rocksutil/slice.h	/^  void clear() { data_ = ""; size_ = 0; }$/;"	f	class:rocksutil::Slice
+clear	rutil/autovector.h	/^  void clear() {$/;"	f	class:rocksutil::autovector
+code	include/rocksutil/status.h	/^  Code code() const { return code_; }$/;"	f	class:rocksutil::Status
+code_	include/rocksutil/status.h	/^  Code code_;$/;"	m	class:rocksutil::Status
+compare	include/rocksutil/slice.h	/^inline int Slice::compare(const Slice& b) const {$/;"	f	class:rocksutil::Slice
+const_iterator	rutil/autovector.h	/^  typedef iterator_impl<const autovector, const value_type> const_iterator;$/;"	t	class:rocksutil::autovector
+const_pointer	rutil/autovector.h	/^  typedef const value_type* const_pointer;$/;"	t	class:rocksutil::autovector
+const_reference	rutil/autovector.h	/^  typedef const value_type& const_reference;$/;"	t	class:rocksutil::autovector
+const_reverse_iterator	rutil/autovector.h	/^  typedef std::reverse_iterator<const_iterator> const_reverse_iterator;$/;"	t	class:rocksutil::autovector
+crc32c	include/rocksutil/crc32c.h	/^namespace crc32c {$/;"	n	namespace:rocksutil
+crc32c	rutil/crc32c.cc	/^namespace crc32c {$/;"	n	namespace:rocksutil	file:
+ctime_	include/rocksutil/auto_roll_logger.h	/^  uint64_t ctime_;$/;"	m	class:rocksutil::AutoRollLogger
+cursize_	rutil/aligned_buffer.h	/^  size_t cursize_;$/;"	m	class:rocksutil::AlignedBuffer
+cv_	rport/port_posix.h	/^  pthread_cond_t cv_;$/;"	m	class:rocksutil::port::CondVar
+data	include/rocksutil/slice.h	/^  const char* data() const { return data_; }$/;"	f	class:rocksutil::Slice
+data_	include/rocksutil/slice.h	/^  const char* data_;$/;"	m	class:rocksutil::Slice
+date	Makefile	/^date := $(shell date +%F)$/;"	m
+deleter	rutil/lru_cache.h	/^  void (*deleter)(const Slice&, void* value);$/;"	m	struct:rocksutil::LRUHandle
+dest_	include/rocksutil/log_writer.h	/^  unique_ptr<WritableFileWriter> dest_;$/;"	m	class:rocksutil::log::Writer
+difference_offset	include/rocksutil/slice.h	/^inline size_t Slice::difference_offset(const Slice& b) const {$/;"	f	class:rocksutil::Slice
+difference_type	rutil/autovector.h	/^    typedef typename TAutoVector::difference_type difference_type;$/;"	t	class:rocksutil::autovector::iterator_impl
+difference_type	rutil/autovector.h	/^  typedef typename std::vector<T>::difference_type difference_type;$/;"	t	class:rocksutil::autovector
+direct_io_	include/rocksutil/file_reader_writer.h	/^  const bool              direct_io_;$/;"	m	class:rocksutil::WritableFileWriter
+dst_	rutil/io_posix.h	/^  char* dst_;             \/\/ Where to write next  (in range [base_,limit_])$/;"	m	class:rocksutil::PosixMmapFile
+dummy	Makefile	/^dummy := $(shell (export ROCKSUTIL_ROOT="$(CURDIR)"; "$(CURDIR)\/build_detect_platform" "$(CURDIR)\/make_config.mk"))$/;"	m
+elems_	rutil/lru_cache.h	/^  uint32_t elems_;$/;"	m	class:rocksutil::LRUHandleTable
+emplace_back	rutil/autovector.h	/^  void emplace_back(Args&&... args) {$/;"	f	class:rocksutil::autovector
+empty	include/rocksutil/slice.h	/^  bool empty() const { return size_ == 0; }$/;"	f	class:rocksutil::Slice
+empty	rutil/autovector.h	/^  bool empty() const { return size() == 0; }$/;"	f	class:rocksutil::autovector
+end	rutil/autovector.h	/^  const_iterator end() const { return const_iterator(this, this->size()); }$/;"	f	class:rocksutil::autovector
+end	rutil/autovector.h	/^  iterator end() { return iterator(this, this->size()); }$/;"	f	class:rocksutil::autovector
+end_of_buffer_offset_	include/rocksutil/log_reader.h	/^  uint64_t end_of_buffer_offset_;$/;"	m	class:rocksutil::log::Reader
+ends_with	include/rocksutil/slice.h	/^  bool ends_with(const Slice& x) const {$/;"	f	class:rocksutil::Slice
+entries	include/rocksutil/thread_local.h	/^    std::vector<Entry> entries;$/;"	m	struct:rocksutil::ThreadLocalPtr::ThreadData
+env_	include/rocksutil/auto_roll_logger.h	/^  Env* env_;$/;"	m	class:rocksutil::AutoRollLogger
+env_	rutil/posix_logger.h	/^  Env* env_;$/;"	m	class:rocksutil::PosixLogger
+env_	rutil/threadpool_imp.h	/^  Env* env_;$/;"	m	class:rocksutil::ThreadPoolImpl
+env_options	examples/wal_example.cc	/^EnvOptions env_options;$/;"	v
+eof_	include/rocksutil/log_reader.h	/^  bool eof_;   \/\/ Last Read() indicated EOF by returning < kBlockSize$/;"	m	class:rocksutil::log::Reader
+eof_offset_	include/rocksutil/log_reader.h	/^  size_t eof_offset_;$/;"	m	class:rocksutil::log::Reader
+exit_all_threads_	rutil/threadpool_imp.h	/^  bool exit_all_threads_;$/;"	m	class:rocksutil::ThreadPoolImpl
+fallocate_with_keep_size	include/rocksutil/env.h	/^  bool fallocate_with_keep_size = true;$/;"	m	struct:rocksutil::EnvOptions
+fallocate_with_keep_size_	rutil/io_posix.h	/^  bool fallocate_with_keep_size_;$/;"	m	class:rocksutil::PosixMmapFile
+fallocate_with_keep_size_	rutil/io_posix.h	/^  bool fallocate_with_keep_size_;$/;"	m	class:rocksutil::PosixWritableFile
+fd_	rutil/env_posix.cc	/^  int fd_;$/;"	m	class:rocksutil::__anon2::PosixFileLock	file:
+fd_	rutil/io_posix.h	/^  int fd_ = -1;$/;"	m	class:rocksutil::PosixDirectIOSequentialFile
+fd_	rutil/io_posix.h	/^  int fd_;$/;"	m	class:rocksutil::PosixDirectory
+fd_	rutil/io_posix.h	/^  int fd_;$/;"	m	class:rocksutil::PosixMmapFile
+fd_	rutil/io_posix.h	/^  int fd_;$/;"	m	class:rocksutil::PosixMmapReadableFile
+fd_	rutil/io_posix.h	/^  int fd_;$/;"	m	class:rocksutil::PosixRandomAccessFile
+fd_	rutil/io_posix.h	/^  int fd_;$/;"	m	class:rocksutil::PosixRandomRWFile
+fd_	rutil/io_posix.h	/^  int fd_;$/;"	m	class:rocksutil::PosixSequentialFile
+fd_	rutil/io_posix.h	/^  int fd_;$/;"	m	class:rocksutil::PosixWritableFile
+fd_	rutil/posix_logger.h	/^  int fd_;$/;"	m	class:rocksutil::PosixLogger
+fdatasync	rport/port_posix.h	/^#define fdatasync /;"	d
+fflush_unlocked	rport/port_posix.h	/^#define fflush_unlocked /;"	d
+file	include/rocksutil/file_reader_writer.h	/^  RandomAccessFile* file() { return file_.get(); }$/;"	f	class:rocksutil::RandomAccessFileReader
+file	include/rocksutil/file_reader_writer.h	/^  SequentialFile* file() { return file_.get(); }$/;"	f	class:rocksutil::SequentialFileReader
+file	include/rocksutil/log_reader.h	/^  SequentialFileReader* file() { return file_.get(); }$/;"	f	class:rocksutil::log::Reader
+file	include/rocksutil/log_writer.h	/^  WritableFileWriter* file() { return dest_.get(); }$/;"	f	class:rocksutil::log::Writer
+file	include/rocksutil/log_writer.h	/^  const WritableFileWriter* file() const { return dest_.get(); }$/;"	f	class:rocksutil::log::Writer
+file_	include/rocksutil/file_reader_writer.h	/^  std::unique_ptr<RandomAccessFile> file_;$/;"	m	class:rocksutil::RandomAccessFileReader
+file_	include/rocksutil/file_reader_writer.h	/^  std::unique_ptr<SequentialFile> file_;$/;"	m	class:rocksutil::SequentialFileReader
+file_	include/rocksutil/log_reader.h	/^  const unique_ptr<SequentialFileReader> file_;$/;"	m	class:rocksutil::log::Reader
+file_	rutil/file_reader_writer.cc	/^  std::unique_ptr<RandomAccessFile> file_;$/;"	m	class:rocksutil::__anon3::ReadaheadRandomAccessFile	file:
+file_	rutil/io_posix.h	/^  FILE* file_;$/;"	m	class:rocksutil::PosixSequentialFile
+file_	rutil/posix_logger.h	/^  FILE* file_;$/;"	m	class:rocksutil::PosixLogger
+file_offset_	rutil/io_posix.h	/^  uint64_t file_offset_;  \/\/ Offset of base_ in file$/;"	m	class:rocksutil::PosixMmapFile
+filename	rutil/env_posix.cc	/^  std::string filename;$/;"	m	class:rocksutil::__anon2::PosixFileLock	file:
+filename_	rutil/io_posix.h	/^  const std::string filename_;$/;"	m	class:rocksutil::PosixDirectIOSequentialFile
+filename_	rutil/io_posix.h	/^  const std::string filename_;$/;"	m	class:rocksutil::PosixRandomRWFile
+filename_	rutil/io_posix.h	/^  const std::string filename_;$/;"	m	class:rocksutil::PosixWritableFile
+filename_	rutil/io_posix.h	/^  std::string filename_;$/;"	m	class:rocksutil::PosixMmapFile
+filename_	rutil/io_posix.h	/^  std::string filename_;$/;"	m	class:rocksutil::PosixMmapReadableFile
+filename_	rutil/io_posix.h	/^  std::string filename_;$/;"	m	class:rocksutil::PosixRandomAccessFile
+filename_	rutil/io_posix.h	/^  std::string filename_;$/;"	m	class:rocksutil::PosixSequentialFile
+filesize_	include/rocksutil/file_reader_writer.h	/^  uint64_t                filesize_;$/;"	m	class:rocksutil::WritableFileWriter
+filesize_	rutil/io_posix.h	/^  uint64_t filesize_;$/;"	m	class:rocksutil::PosixWritableFile
+flags	rutil/lru_cache.h	/^  char flags;$/;"	m	struct:rocksutil::LRUHandle
+flush_every_seconds_	include/rocksutil/env.h	/^  uint64_t flush_every_seconds_;$/;"	m	class:rocksutil::Logger
+flush_pending_	rutil/posix_logger.h	/^  bool flush_pending_;$/;"	m	class:rocksutil::PosixLogger
+forceMmapOff	rutil/env_posix.cc	/^  bool forceMmapOff; \/\/ do we override Env options?$/;"	m	class:rocksutil::__anon2::PosixEnv	file:
+forward_calls_	rutil/file_reader_writer.cc	/^  const bool           forward_calls_;$/;"	m	class:rocksutil::__anon3::ReadaheadRandomAccessFile	file:
+fread_unlocked	rport/port_posix.h	/^#define fread_unlocked /;"	d
+free_instance_ids_	include/rocksutil/thread_local.h	/^    autovector<uint32_t> free_instance_ids_;$/;"	m	class:rocksutil::ThreadLocalPtr::StaticMeta
+front	rutil/autovector.h	/^  const_reference front() const {$/;"	f	class:rocksutil::autovector
+front	rutil/autovector.h	/^  reference front() {$/;"	f	class:rocksutil::autovector
+function	rutil/threadpool_imp.h	/^    void (*function)(void*);$/;"	m	struct:rocksutil::ThreadPoolImpl::BGItem
+fwrite_unlocked	rport/port_posix.h	/^#define fwrite_unlocked /;"	d
+gen_build_version	Makefile	/^gen_build_version = sed -e s\/@@GIT_SHA@@\/$(git_sha)\/ -e s\/@@GIT_DATE_TIME@@\/$(date)\/ rutil\/build_version.cc.in$/;"	m
+generator_	rutil/random.h	/^  std::mt19937_64 generator_;$/;"	m	class:rocksutil::Random64
+getState	include/rocksutil/status.h	/^  const char* getState() const { return state_; }$/;"	f	class:rocksutil::Status
+get_log_number	include/rocksutil/log_writer.h	/^  uint64_t get_log_number() const { return log_number_; }$/;"	f	class:rocksutil::log::Writer
+gettid	rutil/env_posix.cc	/^  static uint64_t gettid() {$/;"	f	class:rocksutil::__anon2::PosixEnv
+gettid	rutil/env_posix.cc	/^  static uint64_t gettid(pthread_t tid) {$/;"	f	class:rocksutil::__anon2::PosixEnv
+gettid_	rutil/posix_logger.h	/^  uint64_t (*gettid_)();  \/\/ Return the thread id for the current thread$/;"	m	class:rocksutil::PosixLogger
+git_sha	Makefile	/^git_sha := $(shell git rev-parse HEAD 2>\/dev\/null)$/;"	m
+handler_map_	include/rocksutil/thread_local.h	/^    std::unordered_map<uint32_t, UnrefHandler> handler_map_;$/;"	m	class:rocksutil::ThreadLocalPtr::StaticMeta
+hash	rutil/lru_cache.h	/^  uint32_t hash;     \/\/ Hash of key(); used for fast sharding and comparisons$/;"	m	struct:rocksutil::LRUHandle
+head_	include/rocksutil/thread_local.h	/^    ThreadData head_;$/;"	m	class:rocksutil::ThreadLocalPtr::StaticMeta
+headers_	include/rocksutil/auto_roll_logger.h	/^  std::list<std::string> headers_;$/;"	m	class:rocksutil::AutoRollLogger
+high_pri_pool_capacity_	rutil/lru_cache.h	/^  double high_pri_pool_capacity_;$/;"	m	class:rocksutil::LRUCacheShard
+high_pri_pool_ratio_	rutil/lru_cache.h	/^  double high_pri_pool_ratio_;$/;"	m	class:rocksutil::LRUCacheShard
+high_pri_pool_usage_	rutil/lru_cache.h	/^  size_t high_pri_pool_usage_;$/;"	m	class:rocksutil::LRUCacheShard
+id_	include/rocksutil/thread_local.h	/^  const uint32_t id_;$/;"	m	class:rocksutil::ThreadLocalPtr
+index_	rutil/autovector.h	/^    size_t index_ = 0;$/;"	m	class:rocksutil::autovector::iterator_impl
+initial_offset_	include/rocksutil/log_reader.h	/^  uint64_t const initial_offset_;$/;"	m	class:rocksutil::log::Reader
+inst	include/rocksutil/thread_local.h	/^    StaticMeta* inst;$/;"	m	struct:rocksutil::ThreadLocalPtr::ThreadData
+io_priority_	include/rocksutil/env.h	/^  Env::IOPriority io_priority_;$/;"	m	class:rocksutil::WritableFile
+isSSE42	rutil/crc32c.cc	/^static bool isSSE42() {$/;"	f	namespace:rocksutil::crc32c
+iterator	rutil/autovector.h	/^  typedef iterator_impl<autovector, value_type> iterator;$/;"	t	class:rocksutil::autovector
+iterator_category	rutil/autovector.h	/^    typedef std::random_access_iterator_tag iterator_category;$/;"	t	class:rocksutil::autovector::iterator_impl
+iterator_impl	rutil/autovector.h	/^    iterator_impl(TAutoVector* vect, size_t index)$/;"	f	class:rocksutil::autovector::iterator_impl
+iterator_impl	rutil/autovector.h	/^  class iterator_impl {$/;"	c	class:rocksutil::autovector
+kAborted	include/rocksutil/status.h	/^    kAborted = 10,$/;"	e	enum:rocksutil::Status::Code
+kAbsoluteConsistency	include/rocksutil/log_reader.h	/^  kAbsoluteConsistency = 0x01,$/;"	m	class:rocksutil::log::WALRecoveryMode
+kBadHeader	include/rocksutil/log_reader.h	/^    kBadHeader = kMaxRecordType + 3,$/;"	e	enum:rocksutil::log::Reader::__anon1
+kBadRecord	include/rocksutil/log_reader.h	/^    kBadRecord = kMaxRecordType + 2,$/;"	e	enum:rocksutil::log::Reader::__anon1
+kBadRecordChecksum	include/rocksutil/log_reader.h	/^    kBadRecordChecksum = kMaxRecordType + 6,$/;"	e	enum:rocksutil::log::Reader::__anon1
+kBadRecordLen	include/rocksutil/log_reader.h	/^    kBadRecordLen = kMaxRecordType + 5,$/;"	e	enum:rocksutil::log::Reader::__anon1
+kBlockSize	rutil/log_format.h	/^static const unsigned int kBlockSize = 32768;$/;"	m	namespace:rocksutil::log
+kBusy	include/rocksutil/status.h	/^    kBusy = 11,$/;"	e	enum:rocksutil::Status::Code
+kCorruption	include/rocksutil/status.h	/^    kCorruption = 2,$/;"	e	enum:rocksutil::Status::Code
+kDeadlock	include/rocksutil/status.h	/^    kDeadlock = 5,$/;"	e	enum:rocksutil::Status::SubCode
+kDoNotSupportGetLogFileSize	include/rocksutil/env.h	/^  size_t kDoNotSupportGetLogFileSize = std::numeric_limits<size_t>::max();$/;"	m	class:rocksutil::Logger
+kEof	include/rocksutil/log_reader.h	/^    kEof = kMaxRecordType + 1,$/;"	e	enum:rocksutil::log::Reader::__anon1
+kExpired	include/rocksutil/status.h	/^    kExpired = 12,$/;"	e	enum:rocksutil::Status::Code
+kFirstType	rutil/log_format.h	/^  kFirstType = 2,$/;"	e	enum:rocksutil::log::RecordType
+kFullType	rutil/log_format.h	/^  kFullType = 1,$/;"	e	enum:rocksutil::log::RecordType
+kHeaderSize	rutil/log_format.h	/^static const int kHeaderSize = 4 + 1 + 2;$/;"	m	namespace:rocksutil::log
+kIOError	include/rocksutil/status.h	/^    kIOError = 5,$/;"	e	enum:rocksutil::Status::Code
+kIncomplete	include/rocksutil/status.h	/^    kIncomplete = 7,$/;"	e	enum:rocksutil::Status::Code
+kInvalidArgument	include/rocksutil/status.h	/^    kInvalidArgument = 4,$/;"	e	enum:rocksutil::Status::Code
+kLastType	rutil/log_format.h	/^  kLastType = 4,$/;"	e	enum:rocksutil::log::RecordType
+kLittleEndian	rport/port_posix.h	/^static const bool kLittleEndian = PLATFORM_IS_LITTLE_ENDIAN;$/;"	m	namespace:rocksutil::port
+kLockLimit	include/rocksutil/status.h	/^    kLockLimit = 3,$/;"	e	enum:rocksutil::Status::SubCode
+kLockTimeout	include/rocksutil/status.h	/^    kLockTimeout = 2,$/;"	e	enum:rocksutil::Status::SubCode
+kLogFileTimeToRoll	include/rocksutil/auto_roll_logger.h	/^  const size_t kLogFileTimeToRoll;$/;"	m	class:rocksutil::AutoRollLogger
+kMaskDelta	include/rocksutil/crc32c.h	/^static const uint32_t kMaskDelta = 0xa282ead8ul;$/;"	m	namespace:rocksutil::crc32c
+kMaxInt32	rport/port_posix.h	/^const int kMaxInt32 = std::numeric_limits<int32_t>::max();$/;"	m	namespace:rocksutil::port
+kMaxInt64	rport/port_posix.h	/^const int64_t kMaxInt64 = std::numeric_limits<int64_t>::max();$/;"	m	namespace:rocksutil::port
+kMaxLogFileSize	include/rocksutil/auto_roll_logger.h	/^  const size_t kMaxLogFileSize;$/;"	m	class:rocksutil::AutoRollLogger
+kMaxRecordType	rutil/log_format.h	/^static const int kMaxRecordType = kRecyclableLastType;$/;"	m	namespace:rocksutil::log
+kMaxSizet	rport/port_posix.h	/^const size_t kMaxSizet = std::numeric_limits<size_t>::max();$/;"	m	namespace:rocksutil::port
+kMaxSubCode	include/rocksutil/status.h	/^    kMaxSubCode$/;"	e	enum:rocksutil::Status::SubCode
+kMaxUint64	rport/port_posix.h	/^const uint64_t kMaxUint64 = std::numeric_limits<uint64_t>::max();$/;"	m	namespace:rocksutil::port
+kMaxVarint64Length	include/rocksutil/coding.h	/^const unsigned int kMaxVarint64Length = 10;$/;"	m	namespace:rocksutil
+kMergeInProgress	include/rocksutil/status.h	/^    kMergeInProgress = 6,$/;"	e	enum:rocksutil::Status::Code
+kMiddleType	rutil/log_format.h	/^  kMiddleType = 3,$/;"	e	enum:rocksutil::log::RecordType
+kMutexTimeout	include/rocksutil/status.h	/^    kMutexTimeout = 1,$/;"	e	enum:rocksutil::Status::SubCode
+kNoSpace	include/rocksutil/status.h	/^    kNoSpace = 4,$/;"	e	enum:rocksutil::Status::SubCode
+kNone	include/rocksutil/status.h	/^    kNone = 0,$/;"	e	enum:rocksutil::Status::SubCode
+kNotFound	include/rocksutil/status.h	/^    kNotFound = 1,$/;"	e	enum:rocksutil::Status::Code
+kNotSupported	include/rocksutil/status.h	/^    kNotSupported = 3,$/;"	e	enum:rocksutil::Status::Code
+kOk	include/rocksutil/status.h	/^    kOk = 0,$/;"	e	enum:rocksutil::Status::Code
+kOldRecord	include/rocksutil/log_reader.h	/^    kOldRecord = kMaxRecordType + 4,$/;"	e	enum:rocksutil::log::Reader::__anon1
+kPageSize	rutil/io_posix.cc	/^const size_t kPageSize = 4 * 1024;$/;"	m	namespace:rocksutil::__anon4	file:
+kPageSize	rutil/io_posix.cc	/^const size_t kPageSize = sysconf(_SC_PAGESIZE);$/;"	m	namespace:rocksutil::__anon4	file:
+kPointInTimeRecovery	include/rocksutil/log_reader.h	/^  kPointInTimeRecovery = 0x02,$/;"	m	class:rocksutil::log::WALRecoveryMode
+kRecyclableFirstType	rutil/log_format.h	/^  kRecyclableFirstType = 6,$/;"	e	enum:rocksutil::log::RecordType
+kRecyclableFullType	rutil/log_format.h	/^  kRecyclableFullType = 5,$/;"	e	enum:rocksutil::log::RecordType
+kRecyclableHeaderSize	rutil/log_format.h	/^static const int kRecyclableHeaderSize = 4 + 1 + 4 + 2;$/;"	m	namespace:rocksutil::log
+kRecyclableLastType	rutil/log_format.h	/^  kRecyclableLastType = 8,$/;"	e	enum:rocksutil::log::RecordType
+kRecyclableMiddleType	rutil/log_format.h	/^  kRecyclableMiddleType = 7,$/;"	e	enum:rocksutil::log::RecordType
+kSectorSize	rutil/io_posix.cc	/^const size_t kSectorSize = 512;$/;"	m	namespace:rocksutil::__anon4	file:
+kShutdownInProgress	include/rocksutil/status.h	/^    kShutdownInProgress = 8,$/;"	e	enum:rocksutil::Status::Code
+kSkipAnyCorruptedRecords	include/rocksutil/log_reader.h	/^  kSkipAnyCorruptedRecords = 0x03,$/;"	m	class:rocksutil::log::WALRecoveryMode
+kTimedOut	include/rocksutil/status.h	/^    kTimedOut = 9,$/;"	e	enum:rocksutil::Status::Code
+kTolerateCorruptedTailRecords	include/rocksutil/log_reader.h	/^  kTolerateCorruptedTailRecords = 0x00,$/;"	m	class:rocksutil::log::WALRecoveryMode
+kTryAgain	include/rocksutil/status.h	/^    kTryAgain = 13$/;"	e	enum:rocksutil::Status::Code
+kZeroType	rutil/log_format.h	/^  kZeroType = 0,$/;"	e	enum:rocksutil::log::RecordType
+key	rutil/lru_cache.h	/^  Slice key() const {$/;"	f	struct:rocksutil::LRUHandle
+key_data	rutil/lru_cache.h	/^  char key_data[1];  \/\/ Beginning of key$/;"	m	struct:rocksutil::LRUHandle
+key_length	rutil/lru_cache.h	/^  size_t key_length;$/;"	m	struct:rocksutil::LRUHandle
+last_flush_micros_	rutil/posix_logger.h	/^  std::atomic_uint_fast64_t last_flush_micros_;$/;"	m	class:rocksutil::PosixLogger
+last_id_	rutil/sharded_cache.h	/^  std::atomic<uint64_t> last_id_;$/;"	m	class:rocksutil::ShardedCache
+last_preallocated_block_	include/rocksutil/env.h	/^  size_t last_preallocated_block_;$/;"	m	class:rocksutil::WritableFile
+last_record_offset_	include/rocksutil/log_reader.h	/^  uint64_t last_record_offset_;$/;"	m	class:rocksutil::log::Reader
+last_sync_	rutil/io_posix.h	/^  char* last_sync_;       \/\/ Where have we synced up to$/;"	m	class:rocksutil::PosixMmapFile
+last_sync_size_	include/rocksutil/file_reader_writer.h	/^  uint64_t                last_sync_size_;$/;"	m	class:rocksutil::WritableFileWriter
+length_	rutil/io_posix.h	/^  size_t length_;$/;"	m	class:rocksutil::PosixMmapReadableFile
+length_	rutil/lru_cache.h	/^  uint32_t length_;$/;"	m	class:rocksutil::LRUHandleTable
+limit_	rutil/io_posix.h	/^  char* limit_;           \/\/ Limit of the mapped region$/;"	m	class:rocksutil::PosixMmapFile
+list_	rutil/lru_cache.h	/^  LRUHandle** list_;$/;"	m	class:rocksutil::LRUHandleTable
+lock	include/rocksutil/mutexlock.h	/^  void lock() {$/;"	f	class:rocksutil::SpinMutex
+lock_	rutil/file_reader_writer.cc	/^  mutable std::mutex   lock_;$/;"	m	class:rocksutil::__anon3::ReadaheadRandomAccessFile	file:
+lockedFiles	rutil/env_posix.cc	/^static std::set<std::string> lockedFiles;$/;"	m	namespace:rocksutil::__anon2	file:
+locked_	include/rocksutil/mutexlock.h	/^  std::atomic<bool> locked_;$/;"	m	class:rocksutil::SpinMutex
+locked_	rport/port_posix.h	/^  bool locked_;$/;"	m	class:rocksutil::port::Mutex
+log	include/rocksutil/log_reader.h	/^namespace log {$/;"	n	namespace:rocksutil
+log	include/rocksutil/log_writer.h	/^namespace log {$/;"	n	namespace:rocksutil
+log	rutil/log_format.h	/^namespace log {$/;"	n	namespace:rocksutil
+log	rutil/log_reader.cc	/^namespace log {$/;"	n	namespace:rocksutil	file:
+log	rutil/log_writer.cc	/^namespace log {$/;"	n	namespace:rocksutil	file:
+log_fname_	include/rocksutil/auto_roll_logger.h	/^  std::string log_fname_; \/\/ Current active info log's file name.$/;"	m	class:rocksutil::AutoRollLogger
+log_level_	include/rocksutil/env.h	/^  InfoLogLevel log_level_;$/;"	m	class:rocksutil::Logger
+log_number_	include/rocksutil/log_reader.h	/^  uint64_t const log_number_;$/;"	m	class:rocksutil::log::Reader
+log_number_	include/rocksutil/log_writer.h	/^  uint64_t log_number_;$/;"	m	class:rocksutil::log::Writer
+log_path_	include/rocksutil/auto_roll_logger.h	/^  std::string log_path_;$/;"	m	class:rocksutil::AutoRollLogger
+log_size_	rutil/posix_logger.h	/^  std::atomic_size_t log_size_;$/;"	m	class:rocksutil::PosixLogger
+logger_	include/rocksutil/auto_roll_logger.h	/^  std::shared_ptr<Logger> logger_;$/;"	m	class:rocksutil::AutoRollLogger
+low_io_priority_	rutil/threadpool_imp.h	/^  bool low_io_priority_;$/;"	m	class:rocksutil::ThreadPoolImpl
+lru_	rutil/lru_cache.h	/^  LRUHandle lru_;$/;"	m	class:rocksutil::LRUCacheShard
+lru_low_pri_	rutil/lru_cache.h	/^  LRUHandle* lru_low_pri_;$/;"	m	class:rocksutil::LRUCacheShard
+lru_usage_	rutil/lru_cache.h	/^  size_t lru_usage_;$/;"	m	class:rocksutil::LRUCacheShard
+main	examples/file_reader_writer_example.cc	/^int main() {$/;"	f
+main	examples/log_example.cc	/^int main() {$/;"	f
+main	examples/lru_cache_example.cc	/^int main() {$/;"	f
+main	examples/mutexlock_example.cc	/^int main() {$/;"	f
+main	examples/thread_local_example.cc	/^int main() {$/;"	f
+main	examples/thread_pool_example.cc	/^int main() {$/;"	f
+main	examples/wal_example.cc	/^int main() {$/;"	f
+map_size_	rutil/io_posix.h	/^  size_t map_size_;       \/\/ How much extra memory to map at a time$/;"	m	class:rocksutil::PosixMmapFile
+max_buffer_size_	include/rocksutil/file_reader_writer.h	/^  size_t                  max_buffer_size_;$/;"	m	class:rocksutil::WritableFileWriter
+missing_make_config_paths	Makefile	/^missing_make_config_paths := $(shell        \\$/;"	m
+mmapped_region_	rutil/io_posix.h	/^  void* mmapped_region_;$/;"	m	class:rocksutil::PosixMmapReadableFile
+msgs	include/rocksutil/status.h	/^  static const char* msgs[static_cast<int>(kMaxSubCode)];$/;"	m	class:rocksutil::Status
+msgs	rutil/status_message.cc	/^const char* Status::msgs[] = {$/;"	m	class:rocksutil::Status	file:
+mu_	include/rocksutil/mutexlock.h	/^  port::Mutex *const mu_;$/;"	m	class:rocksutil::MutexLock::port
+mu_	include/rocksutil/mutexlock.h	/^  port::RWMutex *const mu_;$/;"	m	class:rocksutil::ReadLock::port
+mu_	include/rocksutil/mutexlock.h	/^  port::RWMutex *const mu_;$/;"	m	class:rocksutil::ReadUnlock::port
+mu_	include/rocksutil/mutexlock.h	/^  port::RWMutex *const mu_;$/;"	m	class:rocksutil::WriteLock::port
+mu_	rport/port_posix.h	/^  Mutex* mu_;$/;"	m	class:rocksutil::port::CondVar
+mu_	rport/port_posix.h	/^  pthread_mutex_t mu_;$/;"	m	class:rocksutil::port::Mutex
+mu_	rport/port_posix.h	/^  pthread_rwlock_t mu_; \/\/ the underlying platform mutex$/;"	m	class:rocksutil::port::RWMutex
+mu_	rutil/env_posix.cc	/^  pthread_mutex_t mu_;$/;"	m	class:rocksutil::__anon2::PosixEnv	file:
+mu_	rutil/threadpool_imp.h	/^  pthread_mutex_t mu_;$/;"	m	class:rocksutil::ThreadPoolImpl
+mutex	examples/wal_example.cc	/^port::CondVar cv(&mutex);$/;"	v
+mutex	examples/wal_example.cc	/^port::Mutex mutex;$/;"	v
+mutex_	include/rocksutil/auto_roll_logger.h	/^  mutable port::Mutex mutex_;$/;"	m	class:rocksutil::AutoRollLogger
+mutex_	include/rocksutil/thread_local.h	/^    port::Mutex mutex_;$/;"	m	class:rocksutil::ThreadLocalPtr::StaticMeta
+mutex_	rutil/lru_cache.h	/^  mutable port::Mutex mutex_;$/;"	m	class:rocksutil::LRUCacheShard
+mutex_lockedFiles	rutil/env_posix.cc	/^static port::Mutex mutex_lockedFiles;$/;"	m	namespace:rocksutil::__anon2	file:
+name	include/rocksutil/env.h	/^    std::string name;$/;"	m	struct:rocksutil::Env::FileAttributes
+next	include/rocksutil/thread_local.h	/^    ThreadData* next;$/;"	m	struct:rocksutil::ThreadLocalPtr::ThreadData
+next	rutil/lru_cache.h	/^  LRUHandle* next;$/;"	m	struct:rocksutil::LRUHandle
+next_hash	rutil/lru_cache.h	/^  LRUHandle* next_hash;$/;"	m	struct:rocksutil::LRUHandle
+next_instance_id_	include/rocksutil/thread_local.h	/^    uint32_t next_instance_id_;$/;"	m	class:rocksutil::ThreadLocalPtr::StaticMeta
+next_write_offset_	include/rocksutil/file_reader_writer.h	/^  uint64_t                next_write_offset_;$/;"	m	class:rocksutil::WritableFileWriter
+noexcept	include/rocksutil/status.h	/^  Status& operator=(Status&& s) noexcept;$/;"	m	class:rocksutil::Status
+noexcept	include/rocksutil/status.h	/^  Status(Status&& s) noexcept;$/;"	m	class:rocksutil::Status
+num	examples/lru_cache_example.cc	/^  int num() {$/;"	f	class:Entity
+num	examples/thread_pool_example.cc	/^  int num;$/;"	m	struct:Msg	file:
+num_	examples/lru_cache_example.cc	/^  int num_;$/;"	m	class:Entity	file:
+num_parts	include/rocksutil/slice.h	/^  int num_parts;$/;"	m	struct:rocksutil::SliceParts
+num_shard_bits_	rutil/sharded_cache.h	/^  int num_shard_bits_;$/;"	m	class:rocksutil::ShardedCache
+num_stack_items_	rutil/autovector.h	/^  size_type num_stack_items_ = 0;  \/\/ current number of items$/;"	m	class:rocksutil::autovector
+ok	include/rocksutil/status.h	/^  bool ok() const { return code() == kOk; }$/;"	f	class:rocksutil::Status
+only_in_stack	rutil/autovector.h	/^  bool only_in_stack() const {$/;"	f	class:rocksutil::autovector
+operator !=	include/rocksutil/slice.h	/^inline bool operator!=(const Slice& x, const Slice& y) {$/;"	f	namespace:rocksutil
+operator !=	include/rocksutil/status.h	/^inline bool Status::operator!=(const Status& rhs) const {$/;"	f	class:rocksutil::Status
+operator !=	rutil/autovector.h	/^    bool operator!=(const self_type& other) const { return !(*this == other); }$/;"	f	class:rocksutil::autovector::iterator_impl
+operator ()	include/rocksutil/hash.h	/^  uint32_t operator()(const Slice& s) const { return GetSliceHash(s); }$/;"	f	struct:rocksutil::SliceHasher
+operator *	rutil/autovector.h	/^    reference operator*() {$/;"	f	class:rocksutil::autovector::iterator_impl
+operator +	rutil/autovector.h	/^    self_type operator+(difference_type len) {$/;"	f	class:rocksutil::autovector::iterator_impl
+operator ++	rutil/autovector.h	/^    self_type operator++(int) {$/;"	f	class:rocksutil::autovector::iterator_impl
+operator ++	rutil/autovector.h	/^    self_type& operator++() {$/;"	f	class:rocksutil::autovector::iterator_impl
+operator +=	rutil/autovector.h	/^    self_type& operator+=(difference_type len) {$/;"	f	class:rocksutil::autovector::iterator_impl
+operator -	rutil/autovector.h	/^    difference_type operator-(const self_type& other) {$/;"	f	class:rocksutil::autovector::iterator_impl
+operator -	rutil/autovector.h	/^    self_type operator-(difference_type len) {$/;"	f	class:rocksutil::autovector::iterator_impl
+operator --	rutil/autovector.h	/^    self_type operator--(int) {$/;"	f	class:rocksutil::autovector::iterator_impl
+operator --	rutil/autovector.h	/^    self_type& operator--() {$/;"	f	class:rocksutil::autovector::iterator_impl
+operator -=	rutil/autovector.h	/^    self_type& operator-=(difference_type len) {$/;"	f	class:rocksutil::autovector::iterator_impl
+operator ->	rutil/autovector.h	/^    pointer operator->() {$/;"	f	class:rocksutil::autovector::iterator_impl
+operator <	rutil/autovector.h	/^    bool operator<(const self_type& other) const {$/;"	f	class:rocksutil::autovector::iterator_impl
+operator <=	rutil/autovector.h	/^    bool operator<=(const self_type& other) const {$/;"	f	class:rocksutil::autovector::iterator_impl
+operator =	include/rocksutil/status.h	/^inline Status& Status::operator=(const Status& s) {$/;"	f	class:rocksutil::Status
+operator =	rutil/autovector.h	/^  autovector& operator=(const autovector& other) { return assign(other); }$/;"	f	class:rocksutil::autovector
+operator ==	include/rocksutil/slice.h	/^inline bool operator==(const Slice& x, const Slice& y) {$/;"	f	namespace:rocksutil
+operator ==	include/rocksutil/status.h	/^inline bool Status::operator==(const Status& rhs) const {$/;"	f	class:rocksutil::Status
+operator ==	rutil/autovector.h	/^    bool operator==(const self_type& other) const {$/;"	f	class:rocksutil::autovector::iterator_impl
+operator >	rutil/autovector.h	/^    bool operator>(const self_type& other) const {$/;"	f	class:rocksutil::autovector::iterator_impl
+operator >=	rutil/autovector.h	/^    bool operator>=(const self_type& other) const {$/;"	f	class:rocksutil::autovector::iterator_impl
+operator []	include/rocksutil/slice.h	/^  char operator[](size_t n) const {$/;"	f	class:rocksutil::Slice
+operator []	rutil/autovector.h	/^  const_reference operator[](size_type n) const {$/;"	f	class:rocksutil::autovector
+operator []	rutil/autovector.h	/^  reference operator[](size_type n) {$/;"	f	class:rocksutil::autovector
+other	rutil/autovector.h	/^  autovector& operator=(autovector&& other) = delete;$/;"	m	class:rocksutil::autovector
+other	rutil/autovector.h	/^  autovector(autovector&& other) = delete;$/;"	m	class:rocksutil::autovector
+override	include/rocksutil/auto_roll_logger.h	/^  virtual void LogHeader(const char* format, va_list ap) override;$/;"	m	class:rocksutil::AutoRollLogger
+override	include/rocksutil/auto_roll_logger.h	/^  void Logv(const char* format, va_list ap) override;$/;"	m	class:rocksutil::AutoRollLogger
+override	rutil/env_posix.cc	/^                        void (*unschedFunction)(void* arg) = 0) override;$/;"	m	class:rocksutil::__anon2::PosixEnv	file:
+override	rutil/env_posix.cc	/^  virtual int UnSchedule(void* arg, Priority pri) override;$/;"	m	class:rocksutil::__anon2::PosixEnv	file:
+override	rutil/env_posix.cc	/^  virtual unsigned int GetThreadPoolQueueLen(Priority pri = LOW) const override;$/;"	m	class:rocksutil::__anon2::PosixEnv	file:
+override	rutil/env_posix.cc	/^  virtual void StartThread(void (*function)(void* arg), void* arg) override;$/;"	m	class:rocksutil::__anon2::PosixEnv	file:
+override	rutil/env_posix.cc	/^  virtual void WaitForJoin() override;$/;"	m	class:rocksutil::__anon2::PosixEnv	file:
+override	rutil/io_posix.h	/^                      char* scratch) const override;$/;"	m	class:rocksutil::PosixMmapReadableFile
+override	rutil/io_posix.h	/^                      char* scratch) const override;$/;"	m	class:rocksutil::PosixRandomAccessFile
+override	rutil/io_posix.h	/^                      char* scratch) const override;$/;"	m	class:rocksutil::PosixRandomRWFile
+override	rutil/io_posix.h	/^              char* scratch) const override;$/;"	m	class:rocksutil::PosixDirectIORandomAccessFile
+override	rutil/io_posix.h	/^  Status Append(const Slice& data) override;$/;"	m	class:rocksutil::PosixDirectIOWritableFile
+override	rutil/io_posix.h	/^  Status InvalidateCache(size_t offset, size_t length) override;$/;"	m	class:rocksutil::PosixDirectIOSequentialFile
+override	rutil/io_posix.h	/^  Status PositionedAppend(const Slice& data, uint64_t offset) override;$/;"	m	class:rocksutil::PosixDirectIOWritableFile
+override	rutil/io_posix.h	/^  Status Read(size_t n, Slice* result, char* scratch) override;$/;"	m	class:rocksutil::PosixDirectIOSequentialFile
+override	rutil/io_posix.h	/^  Status Skip(uint64_t n) override;$/;"	m	class:rocksutil::PosixDirectIOSequentialFile
+override	rutil/io_posix.h	/^  virtual Status Allocate(uint64_t offset, uint64_t len) override;$/;"	m	class:rocksutil::PosixMmapFile
+override	rutil/io_posix.h	/^  virtual Status Allocate(uint64_t offset, uint64_t len) override;$/;"	m	class:rocksutil::PosixWritableFile
+override	rutil/io_posix.h	/^  virtual Status Append(const Slice& data) override;$/;"	m	class:rocksutil::PosixMmapFile
+override	rutil/io_posix.h	/^  virtual Status Append(const Slice& data) override;$/;"	m	class:rocksutil::PosixWritableFile
+override	rutil/io_posix.h	/^  virtual Status Close() override;$/;"	m	class:rocksutil::PosixMmapFile
+override	rutil/io_posix.h	/^  virtual Status Close() override;$/;"	m	class:rocksutil::PosixRandomRWFile
+override	rutil/io_posix.h	/^  virtual Status Close() override;$/;"	m	class:rocksutil::PosixWritableFile
+override	rutil/io_posix.h	/^  virtual Status Flush() override;$/;"	m	class:rocksutil::PosixMmapFile
+override	rutil/io_posix.h	/^  virtual Status Flush() override;$/;"	m	class:rocksutil::PosixRandomRWFile
+override	rutil/io_posix.h	/^  virtual Status Flush() override;$/;"	m	class:rocksutil::PosixWritableFile
+override	rutil/io_posix.h	/^  virtual Status Fsync() override;$/;"	m	class:rocksutil::PosixDirectory
+override	rutil/io_posix.h	/^  virtual Status Fsync() override;$/;"	m	class:rocksutil::PosixMmapFile
+override	rutil/io_posix.h	/^  virtual Status Fsync() override;$/;"	m	class:rocksutil::PosixRandomRWFile
+override	rutil/io_posix.h	/^  virtual Status Fsync() override;$/;"	m	class:rocksutil::PosixWritableFile
+override	rutil/io_posix.h	/^  virtual Status InvalidateCache(size_t offset, size_t length) override;$/;"	m	class:rocksutil::PosixMmapFile
+override	rutil/io_posix.h	/^  virtual Status InvalidateCache(size_t offset, size_t length) override;$/;"	m	class:rocksutil::PosixMmapReadableFile
+override	rutil/io_posix.h	/^  virtual Status InvalidateCache(size_t offset, size_t length) override;$/;"	m	class:rocksutil::PosixRandomAccessFile
+override	rutil/io_posix.h	/^  virtual Status InvalidateCache(size_t offset, size_t length) override;$/;"	m	class:rocksutil::PosixSequentialFile
+override	rutil/io_posix.h	/^  virtual Status InvalidateCache(size_t offset, size_t length) override;$/;"	m	class:rocksutil::PosixWritableFile
+override	rutil/io_posix.h	/^  virtual Status PositionedAppend(const Slice& data, uint64_t offset) override;$/;"	m	class:rocksutil::PosixWritableFile
+override	rutil/io_posix.h	/^  virtual Status RangeSync(uint64_t offset, uint64_t nbytes) override;$/;"	m	class:rocksutil::PosixWritableFile
+override	rutil/io_posix.h	/^  virtual Status Read(size_t n, Slice* result, char* scratch) override;$/;"	m	class:rocksutil::PosixSequentialFile
+override	rutil/io_posix.h	/^  virtual Status Skip(uint64_t n) override;$/;"	m	class:rocksutil::PosixSequentialFile
+override	rutil/io_posix.h	/^  virtual Status Sync() override;$/;"	m	class:rocksutil::PosixMmapFile
+override	rutil/io_posix.h	/^  virtual Status Sync() override;$/;"	m	class:rocksutil::PosixRandomRWFile
+override	rutil/io_posix.h	/^  virtual Status Sync() override;$/;"	m	class:rocksutil::PosixWritableFile
+override	rutil/io_posix.h	/^  virtual Status Write(uint64_t offset, const Slice& data) override;$/;"	m	class:rocksutil::PosixRandomRWFile
+override	rutil/io_posix.h	/^  virtual bool IsSyncThreadSafe() const override;$/;"	m	class:rocksutil::PosixWritableFile
+override	rutil/io_posix.h	/^  virtual size_t GetUniqueId(char* id, size_t max_size) const override;$/;"	m	class:rocksutil::PosixRandomAccessFile
+override	rutil/io_posix.h	/^  virtual size_t GetUniqueId(char* id, size_t max_size) const override;$/;"	m	class:rocksutil::PosixWritableFile
+override	rutil/io_posix.h	/^  virtual uint64_t GetFileSize() override;$/;"	m	class:rocksutil::PosixMmapFile
+override	rutil/io_posix.h	/^  virtual uint64_t GetFileSize() override;$/;"	m	class:rocksutil::PosixWritableFile
+override	rutil/io_posix.h	/^  virtual void Hint(AccessPattern pattern) override;$/;"	m	class:rocksutil::PosixRandomAccessFile
+override	rutil/lru_cache.h	/^                                      bool thread_safe) override;$/;"	m	class:rocksutil::LRUCacheShard
+override	rutil/lru_cache.h	/^                        Cache::Priority priority) override;$/;"	m	class:rocksutil::LRUCacheShard
+override	rutil/lru_cache.h	/^  virtual Cache::Handle* Lookup(const Slice& key, uint32_t hash) override;$/;"	m	class:rocksutil::LRUCacheShard
+override	rutil/lru_cache.h	/^  virtual CacheShard* GetShard(int shard) override;$/;"	m	class:rocksutil::LRUCache
+override	rutil/lru_cache.h	/^  virtual const CacheShard* GetShard(int shard) const override;$/;"	m	class:rocksutil::LRUCache
+override	rutil/lru_cache.h	/^  virtual size_t GetCharge(Handle* handle) const override;$/;"	m	class:rocksutil::LRUCache
+override	rutil/lru_cache.h	/^  virtual size_t GetPinnedUsage() const override;$/;"	m	class:rocksutil::LRUCacheShard
+override	rutil/lru_cache.h	/^  virtual size_t GetUsage() const override;$/;"	m	class:rocksutil::LRUCacheShard
+override	rutil/lru_cache.h	/^  virtual uint32_t GetHash(Handle* handle) const override;$/;"	m	class:rocksutil::LRUCache
+override	rutil/lru_cache.h	/^  virtual void DisownData() override;$/;"	m	class:rocksutil::LRUCache
+override	rutil/lru_cache.h	/^  virtual void Erase(const Slice& key, uint32_t hash) override;$/;"	m	class:rocksutil::LRUCacheShard
+override	rutil/lru_cache.h	/^  virtual void EraseUnRefEntries() override;$/;"	m	class:rocksutil::LRUCacheShard
+override	rutil/lru_cache.h	/^  virtual void Release(Cache::Handle* handle) override;$/;"	m	class:rocksutil::LRUCacheShard
+override	rutil/lru_cache.h	/^  virtual void SetCapacity(size_t capacity) override;$/;"	m	class:rocksutil::LRUCacheShard
+override	rutil/lru_cache.h	/^  virtual void SetStrictCapacityLimit(bool strict_capacity_limit) override;$/;"	m	class:rocksutil::LRUCacheShard
+override	rutil/lru_cache.h	/^  virtual void* Value(Handle* handle) override;$/;"	m	class:rocksutil::LRUCache
+override	rutil/sharded_cache.h	/^                                      bool thread_safe) override;$/;"	m	class:rocksutil::ShardedCache
+override	rutil/sharded_cache.h	/^                        Handle** handle, Priority priority) override;$/;"	m	class:rocksutil::ShardedCache
+override	rutil/sharded_cache.h	/^  virtual Handle* Lookup(const Slice& key) override;$/;"	m	class:rocksutil::ShardedCache
+override	rutil/sharded_cache.h	/^  virtual bool HasStrictCapacityLimit() const override;$/;"	m	class:rocksutil::ShardedCache
+override	rutil/sharded_cache.h	/^  virtual const char* Name() const override = 0;$/;"	m	class:rocksutil::ShardedCache
+override	rutil/sharded_cache.h	/^  virtual size_t GetCapacity() const override;$/;"	m	class:rocksutil::ShardedCache
+override	rutil/sharded_cache.h	/^  virtual size_t GetPinnedUsage() const override;$/;"	m	class:rocksutil::ShardedCache
+override	rutil/sharded_cache.h	/^  virtual size_t GetUsage() const override;$/;"	m	class:rocksutil::ShardedCache
+override	rutil/sharded_cache.h	/^  virtual size_t GetUsage(Handle* handle) const override;$/;"	m	class:rocksutil::ShardedCache
+override	rutil/sharded_cache.h	/^  virtual uint64_t NewId() override;$/;"	m	class:rocksutil::ShardedCache
+override	rutil/sharded_cache.h	/^  virtual void DisownData() override = 0;$/;"	m	class:rocksutil::ShardedCache
+override	rutil/sharded_cache.h	/^  virtual void Erase(const Slice& key) override;$/;"	m	class:rocksutil::ShardedCache
+override	rutil/sharded_cache.h	/^  virtual void EraseUnRefEntries() override;$/;"	m	class:rocksutil::ShardedCache
+override	rutil/sharded_cache.h	/^  virtual void Release(Handle* handle) override;$/;"	m	class:rocksutil::ShardedCache
+override	rutil/sharded_cache.h	/^  virtual void SetCapacity(size_t capacity) override;$/;"	m	class:rocksutil::ShardedCache
+override	rutil/sharded_cache.h	/^  virtual void SetStrictCapacityLimit(bool strict_capacity_limit) override;$/;"	m	class:rocksutil::ShardedCache
+override	rutil/sharded_cache.h	/^  virtual void* Value(Handle* handle) override = 0;$/;"	m	class:rocksutil::ShardedCache
+override	rutil/threadpool_imp.h	/^  void JoinAllThreads() override;$/;"	m	class:rocksutil::ThreadPoolImpl
+override	rutil/threadpool_imp.h	/^  void SetBackgroundThreads(int num) override;$/;"	m	class:rocksutil::ThreadPoolImpl
+page_size_	rutil/env_posix.cc	/^  size_t page_size_;$/;"	m	class:rocksutil::__anon2::PosixEnv	file:
+page_size_	rutil/io_posix.h	/^  size_t page_size_;$/;"	m	class:rocksutil::PosixMmapFile
+parts	include/rocksutil/slice.h	/^  const Slice* parts;$/;"	m	struct:rocksutil::SliceParts
+pending_sync_	include/rocksutil/file_reader_writer.h	/^  bool                    pending_sync_;$/;"	m	class:rocksutil::WritableFileWriter
+pointer	rutil/autovector.h	/^    typedef TValueType* pointer;$/;"	t	class:rocksutil::autovector::iterator_impl
+pointer	rutil/autovector.h	/^  typedef value_type* pointer;$/;"	t	class:rocksutil::autovector
+pop_back	rutil/autovector.h	/^  void pop_back() {$/;"	f	class:rocksutil::autovector
+port	rport/port_posix.cc	/^namespace port {$/;"	n	namespace:rocksutil	file:
+port	rport/port_posix.h	/^namespace port {$/;"	n	namespace:rocksutil
+preallocation_block_size	include/rocksutil/env.h	/^  size_t preallocation_block_size() { return preallocation_block_size_; }$/;"	f	class:rocksutil::WritableFile
+preallocation_block_size_	include/rocksutil/env.h	/^  size_t preallocation_block_size_;$/;"	m	class:rocksutil::WritableFile
+prev	include/rocksutil/thread_local.h	/^    ThreadData* prev;$/;"	m	struct:rocksutil::ThreadLocalPtr::ThreadData
+prev	rutil/lru_cache.h	/^  LRUHandle* prev;$/;"	m	struct:rocksutil::LRUHandle
+priority_	rutil/threadpool_imp.h	/^  Env::Priority priority_;$/;"	m	class:rocksutil::ThreadPoolImpl
+pthread_key_	include/rocksutil/thread_local.h	/^    pthread_key_t pthread_key_;$/;"	m	class:rocksutil::ThreadLocalPtr::StaticMeta
+ptr	include/rocksutil/thread_local.h	/^    std::atomic<void*> ptr;$/;"	m	struct:rocksutil::ThreadLocalPtr::Entry
+push_back	rutil/autovector.h	/^  void push_back(T&& item) {$/;"	f	class:rocksutil::autovector
+push_back	rutil/autovector.h	/^  void push_back(const T& item) {$/;"	f	class:rocksutil::autovector
+queue_	rutil/threadpool_imp.h	/^  BGQueue queue_;$/;"	m	class:rocksutil::ThreadPoolImpl
+queue_len_	rutil/threadpool_imp.h	/^  std::atomic_uint queue_len_;  \/\/ Queue length. Used for stats reporting$/;"	m	class:rocksutil::ThreadPoolImpl
+rbegin	rutil/autovector.h	/^  const_reverse_iterator rbegin() const {$/;"	f	class:rocksutil::autovector
+rbegin	rutil/autovector.h	/^  reverse_iterator rbegin() { return reverse_iterator(end()); }$/;"	f	class:rocksutil::autovector
+read_error_	include/rocksutil/log_reader.h	/^  bool read_error_;   \/\/ Error occurred while reading from file$/;"	m	class:rocksutil::log::Reader
+readahead_size_	rutil/file_reader_writer.cc	/^  size_t               readahead_size_;$/;"	m	class:rocksutil::__anon3::ReadaheadRandomAccessFile	file:
+reader_offset	examples/wal_example.cc	/^uint64_t reader_offset = 0;$/;"	v
+recycle_log_files_	include/rocksutil/log_writer.h	/^  bool recycle_log_files_;$/;"	m	class:rocksutil::log::Writer
+recycled_	include/rocksutil/log_reader.h	/^  bool recycled_;$/;"	m	class:rocksutil::log::Reader
+reference	rutil/autovector.h	/^    typedef TValueType& reference;$/;"	t	class:rocksutil::autovector::iterator_impl
+reference	rutil/autovector.h	/^  typedef value_type& reference;$/;"	t	class:rocksutil::autovector
+refs	rutil/lru_cache.h	/^  uint32_t refs;     \/\/ a number of refs to this entry$/;"	m	struct:rocksutil::LRUHandle
+remove_prefix	include/rocksutil/slice.h	/^  void remove_prefix(size_t n) {$/;"	f	class:rocksutil::Slice
+remove_suffix	include/rocksutil/slice.h	/^  void remove_suffix(size_t n) {$/;"	f	class:rocksutil::Slice
+rend	rutil/autovector.h	/^  const_reverse_iterator rend() const {$/;"	f	class:rocksutil::autovector
+rend	rutil/autovector.h	/^  reverse_iterator rend() { return reverse_iterator(begin()); }$/;"	f	class:rocksutil::autovector
+reporter_	include/rocksutil/log_reader.h	/^  Reporter* const reporter_;$/;"	m	class:rocksutil::log::Reader
+resize	rutil/autovector.h	/^  void resize(size_type n) {$/;"	f	class:rocksutil::autovector
+reverse_iterator	rutil/autovector.h	/^  typedef std::reverse_iterator<iterator> reverse_iterator;$/;"	t	class:rocksutil::autovector
+rocksutil	include/rocksutil/auto_roll_logger.h	/^namespace rocksutil {$/;"	n
+rocksutil	include/rocksutil/cache.h	/^namespace rocksutil {$/;"	n
+rocksutil	include/rocksutil/coding.h	/^namespace rocksutil {$/;"	n
+rocksutil	include/rocksutil/crc32c.h	/^namespace rocksutil {$/;"	n
+rocksutil	include/rocksutil/env.h	/^namespace rocksutil {$/;"	n
+rocksutil	include/rocksutil/file_reader_writer.h	/^namespace rocksutil {$/;"	n
+rocksutil	include/rocksutil/hash.h	/^namespace rocksutil {$/;"	n
+rocksutil	include/rocksutil/log_reader.h	/^namespace rocksutil {$/;"	n
+rocksutil	include/rocksutil/log_writer.h	/^namespace rocksutil {$/;"	n
+rocksutil	include/rocksutil/mutexlock.h	/^namespace rocksutil {$/;"	n
+rocksutil	include/rocksutil/slice.h	/^namespace rocksutil {$/;"	n
+rocksutil	include/rocksutil/status.h	/^namespace rocksutil {$/;"	n
+rocksutil	include/rocksutil/thread_local.h	/^namespace rocksutil {$/;"	n
+rocksutil	rport/port_posix.cc	/^namespace rocksutil {$/;"	n	file:
+rocksutil	rport/port_posix.h	/^namespace rocksutil {$/;"	n
+rocksutil	rutil/aligned_buffer.h	/^namespace rocksutil {$/;"	n
+rocksutil	rutil/auto_roll_logger.cc	/^namespace rocksutil {$/;"	n	file:
+rocksutil	rutil/autovector.h	/^namespace rocksutil {$/;"	n
+rocksutil	rutil/coding.cc	/^namespace rocksutil {$/;"	n	file:
+rocksutil	rutil/crc32c.cc	/^namespace rocksutil {$/;"	n	file:
+rocksutil	rutil/env.cc	/^namespace rocksutil {$/;"	n	file:
+rocksutil	rutil/env_posix.cc	/^namespace rocksutil {$/;"	n	file:
+rocksutil	rutil/file_reader_writer.cc	/^namespace rocksutil {$/;"	n	file:
+rocksutil	rutil/hash.cc	/^namespace rocksutil {$/;"	n	file:
+rocksutil	rutil/io_posix.cc	/^namespace rocksutil {$/;"	n	file:
+rocksutil	rutil/io_posix.h	/^namespace rocksutil {$/;"	n
+rocksutil	rutil/log_format.h	/^namespace rocksutil {$/;"	n
+rocksutil	rutil/log_reader.cc	/^namespace rocksutil {$/;"	n	file:
+rocksutil	rutil/log_writer.cc	/^namespace rocksutil {$/;"	n	file:
+rocksutil	rutil/lru_cache.cc	/^namespace rocksutil {$/;"	n	file:
+rocksutil	rutil/lru_cache.h	/^namespace rocksutil {$/;"	n
+rocksutil	rutil/posix_logger.h	/^namespace rocksutil {$/;"	n
+rocksutil	rutil/random.cc	/^namespace rocksutil {$/;"	n	file:
+rocksutil	rutil/random.h	/^namespace rocksutil {$/;"	n
+rocksutil	rutil/sharded_cache.cc	/^namespace rocksutil {$/;"	n	file:
+rocksutil	rutil/sharded_cache.h	/^namespace rocksutil {$/;"	n
+rocksutil	rutil/status.cc	/^namespace rocksutil {$/;"	n	file:
+rocksutil	rutil/status_message.cc	/^namespace rocksutil {$/;"	n	file:
+rocksutil	rutil/string_util.cc	/^namespace rocksutil {$/;"	n	file:
+rocksutil	rutil/string_util.h	/^namespace rocksutil {$/;"	n
+rocksutil	rutil/thread_local.cc	/^namespace rocksutil {$/;"	n	file:
+rocksutil	rutil/threadpool.h	/^namespace rocksutil {$/;"	n
+rocksutil	rutil/threadpool_imp.cc	/^namespace rocksutil {$/;"	n	file:
+rocksutil	rutil/threadpool_imp.h	/^namespace rocksutil {$/;"	n
+seed_	rutil/random.h	/^  uint32_t seed_;$/;"	m	class:rocksutil::Random
+self_type	rutil/autovector.h	/^    typedef iterator_impl<TAutoVector, TValueType> self_type;$/;"	t	class:rocksutil::autovector::iterator_impl
+set_fd_cloexec	include/rocksutil/env.h	/^  bool set_fd_cloexec = true;$/;"	m	struct:rocksutil::EnvOptions
+shards_	rutil/lru_cache.h	/^  LRUCacheShard* shards_;$/;"	m	class:rocksutil::LRUCache
+size	include/rocksutil/slice.h	/^  size_t size() const { return size_; }$/;"	f	class:rocksutil::Slice
+size	rutil/autovector.h	/^  size_type size() const { return num_stack_items_ + vect_.size(); }$/;"	f	class:rocksutil::autovector
+size_	include/rocksutil/slice.h	/^  size_t size_;$/;"	m	class:rocksutil::Slice
+size_bytes	include/rocksutil/env.h	/^    uint64_t size_bytes;$/;"	m	struct:rocksutil::Env::FileAttributes
+size_type	rutil/autovector.h	/^  typedef typename std::vector<T>::size_type size_type;$/;"	t	class:rocksutil::autovector
+starts_with	include/rocksutil/slice.h	/^  bool starts_with(const Slice& x) const {$/;"	f	class:rocksutil::Slice
+state_	include/rocksutil/status.h	/^  const char* state_;$/;"	m	class:rocksutil::Status
+status	include/rocksutil/log_reader.h	/^    Status* status;$/;"	m	struct:rocksutil::log::Reader::LogReporter
+status_	include/rocksutil/auto_roll_logger.h	/^  Status status_;$/;"	m	class:rocksutil::AutoRollLogger
+str	examples/thread_pool_example.cc	/^  std::string str;$/;"	m	struct:Msg	file:
+strict_capacity_limit_	rutil/lru_cache.h	/^  bool strict_capacity_limit_;$/;"	m	class:rocksutil::LRUCacheShard
+strict_capacity_limit_	rutil/sharded_cache.h	/^  bool strict_capacity_limit_;$/;"	m	class:rocksutil::ShardedCache
+subcode	include/rocksutil/status.h	/^  SubCode subcode() const { return subcode_; }$/;"	f	class:rocksutil::Status
+subcode_	include/rocksutil/status.h	/^  SubCode subcode_;$/;"	m	class:rocksutil::Status
+table0_	rutil/crc32c.cc	/^static const uint32_t table0_[256] = {$/;"	m	namespace:rocksutil::crc32c	file:
+table1_	rutil/crc32c.cc	/^static const uint32_t table1_[256] = {$/;"	m	namespace:rocksutil::crc32c	file:
+table2_	rutil/crc32c.cc	/^static const uint32_t table2_[256] = {$/;"	m	namespace:rocksutil::crc32c	file:
+table3_	rutil/crc32c.cc	/^static const uint32_t table3_[256] = {$/;"	m	namespace:rocksutil::crc32c	file:
+table_	rutil/lru_cache.h	/^  LRUHandleTable table_;$/;"	m	class:rocksutil::LRUCacheShard
+tag	rutil/threadpool_imp.h	/^    void* tag;$/;"	m	struct:rocksutil::ThreadPoolImpl::BGItem
+target	include/rocksutil/env.h	/^  Env* target() const { return target_; }$/;"	f	class:rocksutil::EnvWrapper
+target_	include/rocksutil/env.h	/^  Env* target_;$/;"	m	class:rocksutil::EnvWrapper
+target_	include/rocksutil/env.h	/^  WritableFile* target_;$/;"	m	class:rocksutil::WritableFileWrapper
+thread_id_	rutil/threadpool_imp.cc	/^  size_t thread_id_;  \/\/ Thread count in the thread.$/;"	m	struct:rocksutil::BGThreadMetadata	file:
+thread_pool_	rutil/threadpool_imp.cc	/^  ThreadPoolImpl* thread_pool_;$/;"	m	struct:rocksutil::BGThreadMetadata	file:
+thread_pools_	rutil/env_posix.cc	/^  std::vector<ThreadPoolImpl> thread_pools_;$/;"	m	class:rocksutil::__anon2::PosixEnv	file:
+threads_to_join_	rutil/env_posix.cc	/^  std::vector<pthread_t> threads_to_join_;$/;"	m	class:rocksutil::__anon2::PosixEnv	file:
+tls_	include/rocksutil/thread_local.h	/^    static __thread ThreadData* tls_;$/;"	m	class:rocksutil::ThreadLocalPtr::StaticMeta
+tls_	rutil/thread_local.cc	/^__thread ThreadLocalPtr::ThreadData* ThreadLocalPtr::StaticMeta::tls_ = nullptr;$/;"	m	class:rocksutil::ThreadLocalPtr::StaticMeta	file:
+total_threads_limit_	rutil/threadpool_imp.h	/^  int total_threads_limit_;$/;"	m	class:rocksutil::ThreadPoolImpl
+try_lock	include/rocksutil/mutexlock.h	/^  bool try_lock() {$/;"	f	class:rocksutil::SpinMutex
+type_crc_	include/rocksutil/log_writer.h	/^  uint32_t type_crc_[kMaxRecordType + 1];$/;"	m	class:rocksutil::log::Writer
+unlock	include/rocksutil/mutexlock.h	/^  void unlock() { locked_.store(false, std::memory_order_release); }$/;"	f	class:rocksutil::SpinMutex
+unschedFunction	rutil/threadpool_imp.h	/^    void (*unschedFunction)(void*);$/;"	m	struct:rocksutil::ThreadPoolImpl::BGItem
+usage_	rutil/lru_cache.h	/^  size_t usage_;$/;"	m	class:rocksutil::LRUCacheShard
+use_direct_reads	include/rocksutil/env.h	/^  bool use_direct_reads = false;$/;"	m	struct:rocksutil::EnvOptions
+use_direct_writes	include/rocksutil/env.h	/^  bool use_direct_writes = false;$/;"	m	struct:rocksutil::EnvOptions
+use_mmap_reads	include/rocksutil/env.h	/^  bool use_mmap_reads = false;$/;"	m	struct:rocksutil::EnvOptions
+use_mmap_writes	include/rocksutil/env.h	/^  bool use_mmap_writes = true;$/;"	m	struct:rocksutil::EnvOptions
+use_os_buffer	include/rocksutil/env.h	/^  bool use_os_buffer = true;$/;"	m	struct:rocksutil::EnvOptions
+use_os_buffer_	include/rocksutil/file_reader_writer.h	/^  const bool              use_os_buffer_;$/;"	m	class:rocksutil::WritableFileWriter
+use_os_buffer_	rutil/io_posix.h	/^  bool use_os_buffer_;$/;"	m	class:rocksutil::PosixRandomAccessFile
+use_os_buffer_	rutil/io_posix.h	/^  bool use_os_buffer_;$/;"	m	class:rocksutil::PosixSequentialFile
+user_function	rutil/env_posix.cc	/^  void (*user_function)(void*);$/;"	m	struct:rocksutil::__anon2::StartThreadState	file:
+value	rutil/lru_cache.h	/^  void* value;$/;"	m	struct:rocksutil::LRUHandle
+value_type	rutil/autovector.h	/^    typedef TValueType value_type;$/;"	t	class:rocksutil::autovector::iterator_impl
+value_type	rutil/autovector.h	/^  typedef T value_type;$/;"	t	class:rocksutil::autovector
+values_	rutil/autovector.h	/^  value_type values_[kSize];       \/\/ the first `kSize` items$/;"	m	class:rocksutil::autovector
+vect_	rutil/autovector.h	/^    TAutoVector* vect_ = nullptr;$/;"	m	class:rocksutil::autovector::iterator_impl
+vect_	rutil/autovector.h	/^  std::vector<T> vect_;$/;"	m	class:rocksutil::autovector
+writable_file	include/rocksutil/file_reader_writer.h	/^  WritableFile* writable_file() const { return writable_file_.get(); }$/;"	f	class:rocksutil::WritableFileWriter
+writable_file_	include/rocksutil/file_reader_writer.h	/^  std::unique_ptr<WritableFile> writable_file_;$/;"	m	class:rocksutil::WritableFileWriter
+writable_file_max_buffer_size	include/rocksutil/env.h	/^  size_t writable_file_max_buffer_size = 1024 * 1024;$/;"	m	struct:rocksutil::EnvOptions
+writer_offset	examples/wal_example.cc	/^uint64_t writer_offset = 0;$/;"	v
+~AutoRollLogger	include/rocksutil/auto_roll_logger.h	/^  virtual ~AutoRollLogger() {$/;"	f	class:rocksutil::AutoRollLogger
+~Cache	include/rocksutil/cache.h	/^  virtual ~Cache() {}$/;"	f	class:rocksutil::Cache
+~CondVar	rport/port_posix.cc	/^CondVar::~CondVar() { PthreadCall("destroy cv", pthread_cond_destroy(&cv_)); }$/;"	f	class:rocksutil::port::CondVar
+~Directory	include/rocksutil/env.h	/^  virtual ~Directory() {}$/;"	f	class:rocksutil::Directory
+~Entity	examples/lru_cache_example.cc	/^  ~Entity() {$/;"	f	class:Entity
+~Env	rutil/env.cc	/^Env::~Env() {$/;"	f	class:rocksutil::Env
+~EnvWrapper	rutil/env.cc	/^EnvWrapper::~EnvWrapper() {$/;"	f	class:rocksutil::EnvWrapper
+~FileLock	rutil/env.cc	/^FileLock::~FileLock() {$/;"	f	class:rocksutil::FileLock
+~LRUCache	rutil/lru_cache.cc	/^LRUCache::~LRUCache() { delete[] shards_; }$/;"	f	class:rocksutil::LRUCache
+~LRUCacheShard	rutil/lru_cache.cc	/^LRUCacheShard::~LRUCacheShard() {}$/;"	f	class:rocksutil::LRUCacheShard
+~LRUHandleTable	rutil/lru_cache.cc	/^LRUHandleTable::~LRUHandleTable() {$/;"	f	class:rocksutil::LRUHandleTable
+~LocalData	examples/thread_local_example.cc	/^  ~LocalData() {$/;"	f	class:LocalData
+~Logger	rutil/env.cc	/^Logger::~Logger() {$/;"	f	class:rocksutil::Logger
+~Mutex	rport/port_posix.cc	/^Mutex::~Mutex() { PthreadCall("destroy mutex", pthread_mutex_destroy(&mu_)); }$/;"	f	class:rocksutil::port::Mutex
+~MutexLock	include/rocksutil/mutexlock.h	/^  ~MutexLock() { this->mu_->Unlock(); }$/;"	f	class:rocksutil::MutexLock
+~PosixDirectIORandomAccessFile	rutil/io_posix.h	/^  virtual ~PosixDirectIORandomAccessFile() {}$/;"	f	class:rocksutil::PosixDirectIORandomAccessFile
+~PosixDirectIOSequentialFile	rutil/io_posix.h	/^  virtual ~PosixDirectIOSequentialFile() {}$/;"	f	class:rocksutil::PosixDirectIOSequentialFile
+~PosixDirectIOWritableFile	rutil/io_posix.h	/^  virtual ~PosixDirectIOWritableFile() {}$/;"	f	class:rocksutil::PosixDirectIOWritableFile
+~PosixDirectory	rutil/io_posix.cc	/^PosixDirectory::~PosixDirectory() { close(fd_); }$/;"	f	class:rocksutil::PosixDirectory
+~PosixEnv	rutil/env_posix.cc	/^  virtual ~PosixEnv() {$/;"	f	class:rocksutil::__anon2::PosixEnv
+~PosixLogger	rutil/posix_logger.h	/^  virtual ~PosixLogger() {$/;"	f	class:rocksutil::PosixLogger
+~PosixMmapFile	rutil/io_posix.cc	/^PosixMmapFile::~PosixMmapFile() {$/;"	f	class:rocksutil::PosixMmapFile
+~PosixMmapReadableFile	rutil/io_posix.cc	/^PosixMmapReadableFile::~PosixMmapReadableFile() {$/;"	f	class:rocksutil::PosixMmapReadableFile
+~PosixRandomAccessFile	rutil/io_posix.cc	/^PosixRandomAccessFile::~PosixRandomAccessFile() { close(fd_); }$/;"	f	class:rocksutil::PosixRandomAccessFile
+~PosixRandomRWFile	rutil/io_posix.cc	/^PosixRandomRWFile::~PosixRandomRWFile() {$/;"	f	class:rocksutil::PosixRandomRWFile
+~PosixSequentialFile	rutil/io_posix.cc	/^PosixSequentialFile::~PosixSequentialFile() { fclose(file_); }$/;"	f	class:rocksutil::PosixSequentialFile
+~PosixWritableFile	rutil/io_posix.cc	/^PosixWritableFile::~PosixWritableFile() {$/;"	f	class:rocksutil::PosixWritableFile
+~RWMutex	rport/port_posix.cc	/^RWMutex::~RWMutex() { PthreadCall("destroy mutex", pthread_rwlock_destroy(&mu_)); }$/;"	f	class:rocksutil::port::RWMutex
+~RandomAccessFile	rutil/env.cc	/^RandomAccessFile::~RandomAccessFile() {$/;"	f	class:rocksutil::RandomAccessFile
+~RandomRWFile	include/rocksutil/env.h	/^  virtual ~RandomRWFile() {}$/;"	f	class:rocksutil::RandomRWFile
+~ReadLock	include/rocksutil/mutexlock.h	/^  ~ReadLock() { this->mu_->ReadUnlock(); }$/;"	f	class:rocksutil::ReadLock
+~ReadUnlock	include/rocksutil/mutexlock.h	/^  ~ReadUnlock() { mu_->ReadUnlock(); }$/;"	f	class:rocksutil::ReadUnlock
+~Reader	rutil/log_reader.cc	/^Reader::~Reader() {$/;"	f	class:rocksutil::log::Reader
+~Reporter	rutil/log_reader.cc	/^Reader::Reporter::~Reporter() {$/;"	f	class:rocksutil::log::Reader::Reporter
+~SequentialFile	rutil/env.cc	/^SequentialFile::~SequentialFile() {$/;"	f	class:rocksutil::SequentialFile
+~Status	include/rocksutil/status.h	/^  ~Status() { delete[] state_; }$/;"	f	class:rocksutil::Status
+~ThreadLocalPtr	rutil/thread_local.cc	/^ThreadLocalPtr::~ThreadLocalPtr() {$/;"	f	class:rocksutil::ThreadLocalPtr
+~ThreadPool	rutil/threadpool.h	/^  virtual ~ThreadPool() {}$/;"	f	class:rocksutil::ThreadPool
+~ThreadPoolImpl	rutil/threadpool_imp.cc	/^ThreadPoolImpl::~ThreadPoolImpl() { assert(bgthreads_.size() == 0U); }$/;"	f	class:rocksutil::ThreadPoolImpl
+~WritableFile	rutil/env.cc	/^WritableFile::~WritableFile() {$/;"	f	class:rocksutil::WritableFile
+~WritableFileWriter	include/rocksutil/file_reader_writer.h	/^  ~WritableFileWriter() { Close(); }$/;"	f	class:rocksutil::WritableFileWriter
+~WriteLock	include/rocksutil/mutexlock.h	/^  ~WriteLock() { this->mu_->WriteUnlock(); }$/;"	f	class:rocksutil::WriteLock
+~Writer	rutil/log_writer.cc	/^Writer::~Writer() {$/;"	f	class:rocksutil::log::Writer
+~iterator_impl	rutil/autovector.h	/^    ~iterator_impl() {}$/;"	f	class:rocksutil::autovector::iterator_impl
