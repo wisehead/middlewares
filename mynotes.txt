@@ -1,0 +1,117 @@
+1.log_example
+main
+--CreateLogger
+----InfoLogFileName
+----CreateDirIfMissing
+------mkdir//os
+----result = new AutoRollLogger
+----logger->reset(result);
+----//如果不实用auto roll logger，则使用os默认的logger
+----Env::RenameFile
+----Env::NewLogger
+--Header
+----AutoRollLogger::LogHeader
+--std::thread(WriteLog, log, 1);
+----WriteLog
+
+
+2.file_reader_writer_example.cc
+2.1 write
+main
+--Env::Default()
+--NewWritableFile
+--WritableFileWriter
+--WritableFileWriter::Append
+----WritableFile::PrepareWrite//预分配磁盘空间。
+----//bufferIO
+----if (use_os_buffer_ &&//!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+----WritableFileWriter::Flush()//if using use_os_buffer_
+------WritableFileWriter::WriteBuffered
+--------PosixWritableFile::Append
+----------write(fd_, src, left)
+------WritableFileWriter::WriteUnbuffered
+--------TruncateToPageBoundary
+--------PadToAlignmentWith
+--------PosixWritableFile::PositionedAppend
+----------pwrite(fd_, src, left, static_cast<off_t>(offset))
+--------RefitTail
+------writable_file_->Flush()//fake flush
+------WritableFileWriter::RangeSync
+--------PosixWritableFile::RangeSync
+----------sync_file_range//os api
+----AllocateNewBuffer
+----//use unbufferedIO
+----if (!use_os_buffer_ || (buf_.Capacity() >= left))//!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+------AlignedBuffer::Append
+----//elseß if (use_os_buffer_ && (buf_.Capacity() < left))
+------WritableFileWriter::WriteBuffered
+
+--WritableFileWriter::GetFileSize
+--WritableFileWriter::Flush()
+--WritableFileWriter::Sync
+----WritableFileWriter::Flush
+----WritableFileWriter::SyncInternal
+------PosixWritableFile::Fsync
+--------fsync(fd_)
+------PosixWritableFile::Sync
+--------fdatasync
+
+--WritableFileWriter::Close
+----WritableFileWriter::Flush()
+----Truncate
+----PosixWritableFile::Close
+------ftruncate//释放不必要的空间
+------close(fd_)
+
+2.2 [Random] Read
+main
+--NewRandomAccessFile
+----PosixEnv::NewRandomAccessFile
+------open(fname.c_str(), O_RDONLY)
+------//if (options.use_mmap_reads && sizeof(void*) >= 8)
+--------mmap
+--------result->reset(new PosixMmapReadableFile()
+--------close(fd)
+------//else if (options.use_direct_reads)
+-------fd = open(fname.c_str(), flags, 0644)
+-------PosixDirectIORandomAccessFile(fname, fd))
+------//else
+--------result->reset(new PosixRandomAccessFile(fname, fd, options));
+
+--RandomAccessFileReader::Read
+----PosixRandomAccessFile::Read
+------pread
+------Fadvise//用来对cache中的文件进行清理
+--------posix_fadvise//os
+
+
+2.3. [Sequential] Read
+main
+--NewSequentialFile
+----PosixEnv::NewSequentialFile
+------fopen
+------// if (options.use_direct_reads && !options.use_mmap_writes)
+--------fd = open(fname.c_str(), flags, 0644);
+--------fcntl(fd, F_NOCACHE, 1)
+--------new PosixDirectIOSequentialFile
+------//else
+--------result->reset(new PosixSequentialFile(fname, f, options));
+--new SequentialFileReader
+--SequentialFileReader::Skip
+----PosixSequentialFile::Skip
+------fseek//os api
+--SequentialFileReader::Read
+----PosixSequentialFile::Read
+------fread_unlocked
+
+2.4 Read Ahead Random
+main
+--NewRandomAccessFile
+----PosixEnv::NewRandomAccessFile
+------new PosixRandomAccessFile
+--NewReadaheadRandomAccessFile
+--ReadaheadRandomAccessFile::Read
+----PosixRandomAccessFile::Read
+------pread
+----// read from ahead buffer, + read another aheas_size from disk to ahead buffer.
+
