@@ -45,14 +45,14 @@ enum class WALRecoveryMode : char {
   // operate with low grade unrelated data
   kSkipAnyCorruptedRecords = 0x03,
 };
-
+//--
 /**
  * Reader is a general purpose log stream reader implementation. The actual job
  * of reading from the device is implemented by the SequentialFile interface.
  *
  * Please see Writer for details on the file and record layout.
  */
-class Reader {
+class Reader {//--
  public:
   // Interface for reporting errors.
   class Reporter {

@@ -23,7 +23,7 @@ class WritableFileWriter;
 using std::unique_ptr;
 
 namespace log {
-
+//--
 /**
  * Writer is a general purpose log stream writer. It provides an append-only
  * abstraction for writing data. The details of the how the data is written is
@@ -67,7 +67,7 @@ namespace log {
  * Log number = 32bit log file number, so that we can distinguish between
  * records written by the most recent log writer vs a previous one.
  */
-class Writer {
+class Writer {//--
  public:
   // Create a writer that will append data to "*dest".
   // "*dest" must be initially empty.

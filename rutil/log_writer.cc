@@ -17,7 +17,7 @@
 
 namespace rocksutil {
 namespace log {
-
+//--
 Writer::Writer(unique_ptr<WritableFileWriter>&& dest,
                uint64_t log_number, bool recycle_log_files)
     : dest_(std::move(dest)),
@@ -32,7 +32,7 @@ Writer::Writer(unique_ptr<WritableFileWriter>&& dest,
 
 Writer::~Writer() {
 }
-
+//--
 Status Writer::AddRecord(const Slice& slice) {
   const char* ptr = slice.data();
   size_t left = slice.size();
@@ -86,7 +86,7 @@ Status Writer::AddRecord(const Slice& slice) {
   } while (s.ok() && left > 0);
   return s;
 }
-
+//--
 Status Writer::EmitPhysicalRecord(RecordType t, const char* ptr, size_t n) {
   assert(n <= 0xffff);  // Must fit in two bytes
 

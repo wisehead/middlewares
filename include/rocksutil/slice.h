@@ -65,7 +65,7 @@ class Slice {
 
   // Change this slice to refer to an empty array
   void clear() { data_ = ""; size_ = 0; }
-
+  //--
   // Drop the first "n" bytes from this slice.
   void remove_prefix(size_t n) {
     assert(n <= size());

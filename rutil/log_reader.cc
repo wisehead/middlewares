@@ -40,7 +40,7 @@ Reader::Reader(unique_ptr<SequentialFileReader>&& _file, Reporter* reporter,
 Reader::~Reader() {
   delete[] backing_store_;
 }
-
+//--
 bool Reader::SkipToInitialBlock() {
   size_t initial_offset_in_block = initial_offset_ % kBlockSize;
   uint64_t block_start_location = initial_offset_ - initial_offset_in_block;
@@ -63,7 +63,7 @@ bool Reader::SkipToInitialBlock() {
 
   return true;
 }
-
+//--
 // For kAbsoluteConsistency, on clean shutdown we don't expect any error
 // in the log files.  For other modes, we can ignore only incomplete records
 // in the last log file, which are presumably due to a write in progress
@@ -305,7 +305,7 @@ void Reader::ReportDrop(size_t bytes, const Status& reason) {
     reporter_->Corruption(bytes, reason);
   }
 }
-
+//--
 bool Reader::ReadMore(size_t* drop_size, int *error) {
   if (!eof_ && !read_error_) {
     // Last read was a full read, so this is a trailer to skip
@@ -339,7 +339,7 @@ bool Reader::ReadMore(size_t* drop_size, int *error) {
     return false;
   }
 }
-
+//--
 unsigned int Reader::ReadPhysicalRecord(Slice* result, size_t* drop_size) {
   while (true) {
     // We need at least the minimum header size

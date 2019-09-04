@@ -68,7 +68,7 @@ void WriterFunc() {
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
   }
 }
-
+//--
 void ReaderFunc() {
 /*
  * 2. Create a log::Reader: SequentialFile -> SequentialFileReader ->
