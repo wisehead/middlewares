@@ -9,12 +9,6 @@ original_url: https://blog.csdn.net/chdhust/article/details/51869270
 
 # LevelDB源码分析之内存管理类arena
 
-![](assets/1589424263-f79882c200644842455bdaffffa12b14.png)  
-
-[快乐的霖霖](https://me.csdn.net/chenglinhust) 2016-07-09 23:47:49 ![](assets/1589424263-4b4b8d4273e2a4c6a7e1dab33d22e30a.png) 1350 ![](assets/1589424263-d5e50e4ae956617ae79565ca116f0649.png) ![](assets/1589424263-31afcb93fc89e33a507cb81d1c642bfd.png) 收藏 
-
-展开
-
 **LevelDB源码分析之内存管理类arena**
 
       Leveldb的大部分内存管理依赖于C++语言的默认实现，也就是不对内存进行管理。只是在memtable的实现中用到了一个简单的内存管理器(arena)。因为memtable的内部实现skip list写入时，需要分配新节点，大量节点的直接分配可能会带来较多的碎片，影响运行效率。因此，leveldb在每个memtable中都会绑定一个arena，在memtable进行minor compact后，memtable销毁时进行统一释放。  
@@ -39,23 +33,4 @@ original_url: https://blog.csdn.net/chdhust/article/details/51869270
   // Bytes of memory in blocks allocated so far
   size_t blocks_memory_；
 ```
-
-[![](assets/1589424263-251831fedf49c82c6582381736175d9d.jpg)](https://blog.csdn.net/chenglinhust)
-
-[快乐的霖霖](https://blog.csdn.net/chenglinhust) ![](assets/1589424263-2cd44cd20621c196a5c0cdf419328eb8.png)
-
-原创文章 905获赞 171访问量 211万+
-
-关注 [他的留言板](https://bbs.csdn.net/topics/395528198)
-
----------------------------------------------------
-
-
-原网址: [访问](https://blog.csdn.net/chdhust/article/details/51869270)
-
-创建于: 2020-05-14 10:44:23
-
-目录: default
-
-标签: `blog.csdn.net`
 
